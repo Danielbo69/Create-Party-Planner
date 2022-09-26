@@ -406,8 +406,8 @@ a.es:before {
 }
 
 .container-faq .item-faq .question .more {
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
     cursor: pointer;
     transition: .4s;
 }

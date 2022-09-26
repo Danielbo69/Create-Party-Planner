@@ -24,14 +24,14 @@ if (URLactual.pathname == "/screens/FAQ.html" || URLactual.pathname == "ES/scree
         btnDropdown[i].addEventListener('click', () => {
             if (switchc == 0) {
 
-                answer[i].style.height = `100%`;
+                answer[i].style.display = `block`;
                 question[i].style.marginBottom = '10px';
                 btnDropdown[i].innerHTML = '<img src="../img/minus.svg" alt="minus">';
                 switchc++;
 
             } else if (switchc == 1) {
 
-                answer[i].style.height = `0`;
+                answer[i].style.display = `none`;
                 question[i].style.marginBottom = '0';
                 btnDropdown[i].innerHTML = '<img src="../img/plus.svg" alt="plus">';
                 switchc--;

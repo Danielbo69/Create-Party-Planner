@@ -438,7 +438,8 @@ button:focus {
     position: relative;
     padding: 0 20px 0 80px;
     overflow: hidden;
-    height: 0;
+    /* height: 0; */
+    display: none;
     transition: .4s;
     background-color: #00000063;
 }

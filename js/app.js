@@ -11,7 +11,7 @@ window.onload = function () {
 
 /* Getting the current URL. */
 var URLactual = window.location;
-// console.log(URLactual.pathname);
+console.log(URLactual.pathname);
 if (URLactual.pathname == "/screens/FAQ.html" || URLactual.pathname == "ES/screens/preguntas-frecuentes.html") {
 
     let question = document.querySelectorAll('.question');

@@ -329,7 +329,7 @@ a.es:before {
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
 }
 
@@ -407,7 +407,7 @@ a.es:before {
 
 .container-faq .item-faq .question .more {
     width: 40px;
-    height: 40px;
+    /* height: 40px; */
     cursor: pointer;
     transition: .4s;
 }

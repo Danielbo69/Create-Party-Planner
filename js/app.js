@@ -12,7 +12,7 @@ window.onload = function () {
 /* Getting the current URL. */
 var URLactual = window.location;
 console.log(URLactual.pathname);
-if (URLactual.pathname == "/screens/FAQ.html" || URLactual.pathname == "ES/screens/preguntas-frecuentes.html") {
+// if (URLactual.pathname == "/screens/FAQ.html" || URLactual.pathname == "ES/screens/preguntas-frecuentes.html") {
 
     let question = document.querySelectorAll('.question');
     let btnDropdown = document.querySelectorAll('.question #more')
@@ -38,7 +38,7 @@ if (URLactual.pathname == "/screens/FAQ.html" || URLactual.pathname == "ES/scree
             }
         })
     }
-}
+// }
 
 let $start = document.getElementById('startEvent')
 let $end = document.getElementById('endEvent')

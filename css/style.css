@@ -417,6 +417,14 @@ a.es:before {
     height: 100%;
 }
 
+.btn-light {
+    background-color: #00000000 !important;
+    border: 0px !important;
+}
+button:focus {
+    box-shadow: none !important;
+}
+
 .container-faq .item-faq .question i {
     margin-right: 10px;
     width: 20px;
@@ -450,7 +458,7 @@ a.es:before {
     display: flex;
     align-items: center;
     justify-content: right;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* booknow */

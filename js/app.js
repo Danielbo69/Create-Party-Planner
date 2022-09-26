@@ -15,7 +15,7 @@ var URLactual = window.location;
 if (URLactual.pathname == "/screens/FAQ.html" || URLactual.pathname == "ES/screens/preguntas-frecuentes.html") {
 
     let question = document.querySelectorAll('.question');
-    let btnDropdown = document.querySelectorAll('.question .more')
+    let btnDropdown = document.querySelectorAll('.question #more')
     let answer = document.querySelectorAll('.answer');
 
     for (let i = 0; i < btnDropdown.length; i++) {

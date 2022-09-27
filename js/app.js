@@ -63,7 +63,7 @@ let hours = [
 
 /* Checking if the current URL is equal to the URL of the BookNow page or the URL of the reservar page.
 If it is, then it will run the function showHours. */
-if (URLactual.pathname == '/screens/BookNow.html' || URLactual.pathname == '/ES/screens/reservar.html') {
+// if (URLactual.pathname == '/screens/BookNow.html' || URLactual.pathname == '/ES/screens/reservar.html') {
     function showHours(array, starthour) {
         let elementos = '<option selected disabled>Select time</option>'
         for (let i = 0; i < array.length; i++) {
@@ -148,4 +148,4 @@ if (URLactual.pathname == '/screens/BookNow.html' || URLactual.pathname == '/ES/
             })
         }
     })
-}
+// }

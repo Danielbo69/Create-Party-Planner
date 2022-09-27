@@ -69,6 +69,7 @@ function showHours(array, starthour) {
     starthour.innerHTML = elementos;
 
 }
+
 showHours(hours, $start);
 
 /**

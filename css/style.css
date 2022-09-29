@@ -326,7 +326,6 @@ a.es:before {
     display: grid;
     gap: 1em;
     justify-items: center;
-    width: 100%;
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -343,10 +342,6 @@ a.es:before {
 .about_icons a:hover {
     cursor: pointer;
     background-color: #0000001c;
-}
-
-.about_icon {
-    height: 100%;
 }
 
 /*about us*/
@@ -756,7 +751,7 @@ button:focus {
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
     }
-    .about_icon {
+    .about_icons img {
         width: 130px;
     }
 }
@@ -787,7 +782,7 @@ button:focus {
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
     }
-    .about_icon {
+    .about_icons img {
         width: 130px;
     }
 }
@@ -801,7 +796,7 @@ button:focus {
     .paragraph {
         font-size: 1.3em !important;
     }
-    .about_icon {
+    .about_icons img {
         width: 200px;
     }
 }
@@ -818,7 +813,7 @@ button:focus {
     .paragraph {
         font-size: 1.3em !important;
     }
-    .about_icon {
+    .about_icons img {
         width: 200px;
     }
 }
@@ -837,7 +832,7 @@ button:focus {
     .paragraph {
         font-size: 1.5em !important;
     }
-    .about_icon {
+    .about_icons img {
         width: 200px;
     }
 }

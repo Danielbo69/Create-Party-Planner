@@ -605,22 +605,6 @@ button:focus {
     font-size: 30px;
 }
 
-@media only screen and (min-width:320px) and (max-width:768px) {
-    .btn-wsp {
-        width: 63px;
-        height: 63px;
-        line-height: 66px;
-    }
-    .container-faq .item-faq .answer p {
-        font-size: 1.05rem;
-        margin: 0px;
-    }
-    .btn-book { 
-        background-color: #c5307a;
-        color: #fff;
-    }
-}
-
 /*Símbolo de Carga*/
 *,*::after,*::before {
     margin: 0;
@@ -698,30 +682,6 @@ button:focus {
     }
 }
 
-@media only screen and (min-width:280px) and (max-width:319px) {
-    .hero {
-        height: 90vh !important;
-    }
-
-    .hero::before {
-        clip-path: ellipse(90% 50% at 50% 30%);
-    }
-
-    .paragraph {
-        font-size: 0.8em !important;
-    }
-
-    .about_icons a {
-        font-size: 1.1em !important;
-    }
-
-    .container-faq {
-        margin-top: 4em !important;
-    }
-    .booknow-formcontrol .input-form {
-        margin-bottom: 1em !important;
-    }
-}
 
 @media only screen and (min-width:280px) and (max-width:424px) {
     .hero {
@@ -733,11 +693,15 @@ button:focus {
     }
 
     .paragraph {
-        font-size: 0.9em !important;
+        font-size: 0.8em !important;
     }
 
     .language {
         margin-left: 0px !important;
+    }
+
+    .about_icons a {
+        font-size: 1.1em !important;
     }
 
     .container-faq .item-faq .question h3 {
@@ -751,8 +715,22 @@ button:focus {
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
     }
+
     .about_icons img {
         width: 130px;
+    }
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+    .container-faq .item-faq .answer p {
+        font-size: 1.05rem;
+        margin: 0px;
+    }
+    .btn-book { 
+        background-color: #c5307a;
+        color: #fff;
     }
 }
 
@@ -784,6 +762,19 @@ button:focus {
     }
     .about_icons img {
         width: 130px;
+    }
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+    .container-faq .item-faq .answer p {
+        font-size: 1.05rem;
+        margin: 0px;
+    }
+    .btn-book { 
+        background-color: #c5307a;
+        color: #fff;
     }
 }
 

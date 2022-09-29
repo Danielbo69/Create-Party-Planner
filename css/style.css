@@ -533,6 +533,28 @@ button:focus {
     padding: 0px;
 }
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    background-color: #00000000 !important;
+    border: 0px !important;
+    padding: 0px !important;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 90% !important;
+}
+
+.modal-dialog {
+    margin: none !important;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
 .price {
     display: flex;
     justify-content: space-between;

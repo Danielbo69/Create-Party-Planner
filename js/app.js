@@ -177,3 +177,25 @@ let ESextras = [
     'Piscina de pelotas blanca y gris 4.5x3.2 ft',
     'Piscina redonda 4.5 ft'
 ];
+
+let $img = document.getElementById('imgPortada');
+// console.log(img)
+/* A jQuery selector. */
+$img.addEventListener('click', (e) => {
+    console.log(e)
+    var enlace = e.target.src;
+})
+
+function zoom(obj) {
+    let logo = document.getElementById("imgPortada");
+    img = new Image();
+    if (obj == 'unique') {
+        document.querySelector('.modal-body').appendChild(img);
+    } else if (obj == 'dream') {
+        document.querySelector('.modal-body').appendChild(img)
+    } else if (obj == 'gold') {
+        document.querySelector('.modal-body').appendChild(img)
+    } else if (obj == 'deluxe') {
+        document.querySelector('.modal-body').appendChild(img)
+    }
+}

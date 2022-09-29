@@ -22,6 +22,9 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+
     <!-- cdn sweetalert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -77,7 +80,7 @@
         <div class="packages-container container">
             <div class="card-container row">
                 <div class="card col-lg">
-                    <img src="../img/unique.jpg" class="card-img-top" alt="...">
+                    <img src="../img/unique.jpg" class="card-img-top" id="imgPortada" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Package Unique</h5>
                         <p class="card-text">Bounce no include.</p>
@@ -100,7 +103,7 @@
                     </div>
                 </div>
                 <div class="card col-lg">
-                    <img src="../img/dream.jpg" class="card-img-top" alt="...">
+                        <img src="../img/dream.jpg" class="card-img-top" id="imagenPortada" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Package Dream</h5>
                         <p class="card-text">Bounce no include.</p>
@@ -123,7 +126,7 @@
                     </div>
                 </div>
                 <div class="card col-lg">
-                    <img src="../img/gold.jpg" class="card-img-top" alt="...">
+                        <img src="../img/gold.jpg" class="card-img-top" id="imagenPortada" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Package Gold</h5>
                         <p class="card-text">Bounce no include.</p>
@@ -147,7 +150,7 @@
                     </div>
                 </div>
                 <div class="card col-lg">
-                    <img src="../img/deluxe.jpg" class="card-img-top" alt="...">
+                        <img src="../img/deluxe.jpg" class="card-img-top"  id="imagenPortada" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Package Deluxe</h5>
                         <p class="card-text">Bounce no include.</p>
@@ -173,6 +176,23 @@
             </div>
         </div>
     </main>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="img-container" src="">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../js/app.js"></script>
 </body>
 

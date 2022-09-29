@@ -11,7 +11,6 @@ window.onload = function () {
 
 /* Getting the current URL. */
 var URLactual = window.location;
-
 let question = document.querySelectorAll('.question');
 let btnDropdown = document.querySelectorAll('.question #more')
 let answer = document.querySelectorAll('.answer');
@@ -34,6 +33,7 @@ for (let i = 0; i < btnDropdown.length; i++) {
         }
     })
 }
+
 
 let $start = document.getElementById('startEvent')
 let $end = document.getElementById('endEvent')
@@ -58,6 +58,17 @@ let hours = [
 
 /* Checking if the current URL is equal to the URL of the BookNow page or the URL of the reservar page.
 If it is, then it will run the function showHours. */
+function formSelect(obj) {
+    let softplay = document.getElementById('softplay')
+    let balloons = document.getElementById('balloons')
+    if (obj == 'soft') {
+        softplay.style.display = 'block'
+        balloons.style.display = 'none'
+    } else if (obj == 'balloons') {
+        balloons.style.display = 'block'
+        softplay.style.display = 'none'
+    }
+}
 
 function showHours(array, starthour) {
     let elementos = '<option selected disabled>Select time</option>'
@@ -144,3 +155,25 @@ $start.addEventListener('change', function () {
         })
     }
 })
+
+let ESextras = [
+    'Castillo Inflable blanco',
+    'Resbalador rosado claro',
+    'Resbalador azul claro',
+    'Resbalador blanco',
+    'Hopper Animal vaca',
+    'Hopper Animal jirafa',
+    'Hopper Animal conejo',
+    'Hopper Animal zorro',
+    'Escalador suave',
+    'Soft play cilindro',
+    'Puente de arcoíris',
+    'Carro suave',
+    'Bloques suaves 25x25x25cm',
+    'Bloques suaves 15x15x15cm',
+    'Piscina de pelotas blanca 5x5 ft',
+    'Piscina de pelotas blanca y gris 5x5 ft',
+    'Piscina de pelotas blanca 4.5x3.2 ft',
+    'Piscina de pelotas blanca y gris 4.5x3.2 ft',
+    'Piscina redonda 4.5 ft'
+];

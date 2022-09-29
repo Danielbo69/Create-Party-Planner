@@ -92,7 +92,7 @@ body {
 }
 
 .navbar-toggler {
-    border: var(--bs-border-width) solid rgb(248 247 247 / 26%) !important;
+    border: 0px !important;
 }
 
 .navbar-toggler:focus {
@@ -346,7 +346,6 @@ a.es:before {
 }
 
 .about_icon {
-    width: 60%;
     height: 100%;
 }
 
@@ -427,25 +426,20 @@ button:focus {
 
 .container-faq .item-faq .question i {
     margin-right: 10px;
-    width: 20px;
 }
 
-.container-faq .item-faq .question i img {
-    width: 100%;
-}
 
 .container-faq .item-faq .answer {
     position: relative;
-    padding: 0 20px 0 80px;
+    padding: 10px 20px 10px 40px;
     overflow: hidden;
-    /* height: 0; */
     display: none;
     transition: .4s;
     background-color: #00000063;
 }
 
 .container-faq .item-faq .answer p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0px;
 }
 
@@ -475,14 +469,29 @@ button:focus {
 
 .booknow-buttons {
     text-align: center;
+    padding: 30px;
 }
 
-.booknow-tittle {
-    margin-top: 2em !important;
+.booknow-buttons .col-lg {
+    padding: 10px;
 }
 
 .booknow-formcontrol {
     margin-top: 2em !important;
+}
+
+.btn-book {
+    width: 100%;
+    background-color: #00000000;
+    color: rgb(78, 78, 78);
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-book:hover {
+    background-color: #c5307a;
+    color: #fff;
 }
 
 .input-form{
@@ -498,6 +507,35 @@ button:focus {
 .form-check .form-check-input {
     float: none !important;
     margin-left: 0px !important;
+}
+
+.form-check-input:checked {
+    background-color: #d63384 !important;
+    border-color: #d63384 !important;
+}
+
+/* Packages */
+.packages-container {
+    display: grid;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+.packages-container .card-container {
+    justify-content: center;
+    margin: 0px !important;
+}
+
+.packages-container .card {
+    margin: 10px;
+    padding: 0px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Pie*/
@@ -561,6 +599,17 @@ button:focus {
         width: 63px;
         height: 63px;
         line-height: 66px;
+    }
+    .container-faq .item-faq .answer p {
+        font-size: 1.05rem;
+        margin: 0px;
+    }
+    .btn-book {
+        background-color: #d63384;
+        color: #fff;
+    }
+    .btn-book:hover {
+        background-color: #c5307a;
     }
 }
 
@@ -666,7 +715,7 @@ button:focus {
     }
 }
 
-@media only screen and (min-width:320px) and (max-width:424px) {
+@media only screen and (min-width:280px) and (max-width:424px) {
     .hero {
         height: 90vh !important;
     }
@@ -684,7 +733,7 @@ button:focus {
     }
 
     .container-faq .item-faq .question h3 {
-        font-size: 0.6rem !important;
+        font-size: 0.8rem !important;
         margin: 0;
     }
 
@@ -693,6 +742,9 @@ button:focus {
     }
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
+    }
+    .about_icon {
+        width: 130px;
     }
 }
 
@@ -712,7 +764,7 @@ button:focus {
     }
 
     .container-faq .item-faq .question h3 {
-        font-size: 0.8rem !important;
+        font-size: 1rem !important;
         margin: 0;
     }
 
@@ -721,6 +773,9 @@ button:focus {
     }
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
+    }
+    .about_icon {
+        width: 130px;
     }
 }
 
@@ -732,6 +787,9 @@ button:focus {
 
     .paragraph {
         font-size: 1.3em !important;
+    }
+    .about_icon {
+        width: 200px;
     }
 }
 
@@ -746,6 +804,9 @@ button:focus {
 
     .paragraph {
         font-size: 1.3em !important;
+    }
+    .about_icon {
+        width: 200px;
     }
 }
 
@@ -762,5 +823,8 @@ button:focus {
 
     .paragraph {
         font-size: 1.5em !important;
+    }
+    .about_icon {
+        width: 200px;
     }
 }

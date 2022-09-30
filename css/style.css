@@ -461,20 +461,16 @@ button:focus {
     background-size: cover;
     z-index: -1;
 }
-
 .booknow-buttons {
     text-align: center;
     padding: 30px;
 }
-
 .booknow-buttons .col-lg {
     padding: 10px;
 }
-
 .booknow-formcontrol {
     margin-top: 2em !important;
 }
-
 .btn-book {
     width: 100%;
     background-color: #00000000;
@@ -488,25 +484,31 @@ button:focus {
     background-color: #c5307a;
     color: #fff;
 }
-
 .input-form{
     display: flex;
 }
-
 .input-form textarea {
     width: 100%;
     min-height: 38px !important;
     max-height: 38px !important;
 }
-
 .form-check .form-check-input {
     float: none !important;
     margin-left: 0px !important;
 }
-
 .form-check-input:checked {
     background-color: #d63384 !important;
     border-color: #d63384 !important;
+}
+#envio {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+#envio button {
+    background-color: #d63384;
+    color: #fff;
+    width: 150px;
 }
 
 /* Packages */
@@ -517,33 +519,14 @@ button:focus {
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
-
 .packages-container .card-container {
     justify-content: center;
     margin: 0px !important;
 }
-
 .packages-container .card {
     margin: 10px;
     padding: 0px;
 }
-
-.modal.show .modal-dialog {
-    transform: none;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    height: 90% !important;
-}
-
-.modal-dialog {
-    margin: none !important;
-}
-
-.modal-body img {
-    width: 100%;
-}
-
 .price {
     display: flex;
     justify-content: space-between;
@@ -554,7 +537,6 @@ button:focus {
     width: 100%;
     height: 100%;
 }
-
 .pie img {
     width: 100%;
 }
@@ -569,11 +551,9 @@ button:focus {
     z-index: 100;
     transition: all 300ms ease;
 }
-
 .translate-google .goog-te-gadget {
     font-size: 0px !important;
 }
-
 .translate-google .goog-logo-link,
 .goog-logo-link:link,
 .goog-logo-link:visited,
@@ -613,7 +593,6 @@ button:focus {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 #contenedor_loader {
     background-color: rgba(49, 44, 47, 0.9);
     height: 100%;
@@ -624,7 +603,6 @@ button:focus {
     transition: all 1s ease;
     z-index: 10000;
 }
-
 #loader {
     border: 4px;
     border-top-color: #d63384;
@@ -643,7 +621,6 @@ button:focus {
     -o-animation: girar 0.5s  linear infinite;
     animation: girar 0.5s linear infinite;
 }
-
 @keyframes girar {
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
@@ -669,7 +646,6 @@ button:focus {
         transform: translateY(0%);
     }
 }
-
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
@@ -681,7 +657,6 @@ button:focus {
         -webkit-transform: translateY(0%);
     }
 }
-
 
 @media only screen and (min-width:280px) and (max-width:424px) {
     .hero {

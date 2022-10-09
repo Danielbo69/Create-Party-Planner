@@ -90,10 +90,10 @@ echo json_encode($data);
         $mail->SMTPAuth = true;
 
         //Username to use for SMTP authentication - use full email address for gmail
-        $mail->Username = 'danielboscanramos@gmail.com';
+        $mail->Username = '';
 
         //Password to use for SMTP authentication
-        $mail->Password = '25540296El*';
+        $mail->Password = '';
 
         //Set who the message is to be sent from
         //Note that with gmail you can only use your account address (same as `Username`)
@@ -102,7 +102,7 @@ echo json_encode($data);
         $mail->setFrom('danielboscanramos@gmail.com', 'Primera Prueba');
 
         //Set who the message is to be sent to
-        $mail->addAddress('danielboscanramos@hotmail.com', 'Daniel Boscan');
+        $mail->setMessage = '');
 
         /* It's telling PHPMailer to send the message as HTML. */
         $mail->isHTML(true);

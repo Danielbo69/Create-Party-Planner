@@ -137,13 +137,14 @@ a {
     height: 100%;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-color: #f83b99c9;
 }
 
-.nav-link.active, .nav-link:active {
-    border-bottom: 1px solid #dcdcdc ;
-    color: #dcdcdc  !important;
+.nav-link.active,
+.nav-link:active {
+    border-bottom: 1px solid #dcdcdc;
+    color: #dcdcdc !important;
 }
 
 @media (min-width: 992px) {
@@ -415,6 +416,7 @@ a.es:before {
     background-color: #00000000 !important;
     border: 0px !important;
 }
+
 button:focus {
     box-shadow: none !important;
 }
@@ -444,6 +446,7 @@ button:focus {
     justify-content: left;
     width: 100%;
 }
+
 .info-plus {
     display: flex;
     align-items: center;
@@ -461,16 +464,20 @@ button:focus {
     background-size: cover;
     z-index: -1;
 }
+
 .booknow-buttons {
     text-align: center;
     padding: 30px;
 }
+
 .booknow-buttons .col-lg {
     padding: 10px;
 }
+
 .booknow-formcontrol {
     margin-top: 2em !important;
 }
+
 .btn-book {
     width: 100%;
     background-color: #00000000;
@@ -480,31 +487,38 @@ button:focus {
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .btn-book:hover {
     background-color: #c5307a;
     color: #fff;
 }
-.input-form{
+
+.input-form {
     display: flex;
 }
+
 .input-form textarea {
     width: 100%;
     min-height: 38px !important;
     max-height: 38px !important;
 }
+
 .form-check .form-check-input {
     float: none !important;
     margin-left: 0px !important;
 }
+
 .form-check-input:checked {
     background-color: #d63384 !important;
     border-color: #d63384 !important;
 }
+
 #envio {
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
+
 #envio button {
     background-color: #d63384;
     color: #fff;
@@ -519,17 +533,35 @@ button:focus {
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
+
 .packages-container .card-container {
     justify-content: center;
     margin: 0px !important;
 }
+
 .packages-container .card {
     margin: 10px;
     padding: 0px;
 }
+
 .price {
     display: flex;
     justify-content: space-between;
+}
+
+.card-body img {
+    width: 100%;
+}
+
+#btn-packages {
+    width: 100%;
+    background-color: #d63384;
+    border: 0px;
+    border-color: none;
+}
+
+#btn-packages:hover {
+    background-color: #b12b6e;
 }
 
 /*Pie*/
@@ -537,6 +569,7 @@ button:focus {
     width: 100%;
     height: 100%;
 }
+
 .pie img {
     width: 100%;
 }
@@ -551,9 +584,11 @@ button:focus {
     z-index: 100;
     transition: all 300ms ease;
 }
+
 .translate-google .goog-te-gadget {
     font-size: 0px !important;
 }
+
 .translate-google .goog-logo-link,
 .goog-logo-link:link,
 .goog-logo-link:visited,
@@ -586,13 +621,16 @@ button:focus {
 }
 
 /*Símbolo de Carga*/
-*,*::after,*::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 #contenedor_loader {
     background-color: rgba(49, 44, 47, 0.9);
     height: 100%;
@@ -603,6 +641,7 @@ button:focus {
     transition: all 1s ease;
     z-index: 10000;
 }
+
 #loader {
     border: 4px;
     border-top-color: #d63384;
@@ -618,12 +657,18 @@ button:focus {
     bottom: 0;
     margin: auto;
     -webkit-animation: girar 0.5s linear infinite;
-    -o-animation: girar 0.5s  linear infinite;
+    -o-animation: girar 0.5s linear infinite;
     animation: girar 0.5s linear infinite;
 }
+
 @keyframes girar {
-    from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /*Slide Animation*/
@@ -646,6 +691,7 @@ button:focus {
         transform: translateY(0%);
     }
 }
+
 @-webkit-keyframes slide {
     0% {
         opacity: 0;
@@ -687,6 +733,7 @@ button:focus {
     .container-faq {
         margin-top: 4em !important;
     }
+
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
     }
@@ -694,16 +741,19 @@ button:focus {
     .about_icons img {
         width: 130px;
     }
+
     .btn-wsp {
         width: 63px;
         height: 63px;
         line-height: 66px;
     }
+
     .container-faq .item-faq .answer p {
         font-size: 1.05rem;
         margin: 0px;
     }
-    .btn-book { 
+
+    .btn-book {
         background-color: #c5307a;
         color: #fff;
     }
@@ -732,22 +782,27 @@ button:focus {
     .container-faq {
         margin-top: 1em !important;
     }
+
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
     }
+
     .about_icons img {
         width: 130px;
     }
+
     .btn-wsp {
         width: 63px;
         height: 63px;
         line-height: 66px;
     }
+
     .container-faq .item-faq .answer p {
         font-size: 1.05rem;
         margin: 0px;
     }
-    .btn-book { 
+
+    .btn-book {
         background-color: #c5307a;
         color: #fff;
     }
@@ -762,6 +817,7 @@ button:focus {
     .paragraph {
         font-size: 1.3em !important;
     }
+
     .about_icons img {
         width: 200px;
     }
@@ -779,6 +835,7 @@ button:focus {
     .paragraph {
         font-size: 1.3em !important;
     }
+
     .about_icons img {
         width: 200px;
     }
@@ -798,6 +855,7 @@ button:focus {
     .paragraph {
         font-size: 1.5em !important;
     }
+
     .about_icons img {
         width: 200px;
     }

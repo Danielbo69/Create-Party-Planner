@@ -352,3 +352,16 @@
   [hidden] {
     display: none;
   }
+
+  /*Custom Scrollbar*/
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #d63384;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ff3a9d;
+}

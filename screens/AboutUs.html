@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <!-- icono -->
-    <link rel="icon" href="../img/globos (1).png">
+    <link rel="icon" href="../img/icons/globos (1).png">
     <!-- estilos css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalice.css">
@@ -28,55 +28,58 @@
     </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <img class="nav-img" src="../img/PAGINA WEB BENDON-17.png" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="nav-img" src="../img/titles/PAGINA WEB BENDON-17.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./AboutUs.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./Packages.html">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./BookNow.html">Book now</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./FAQ.html">FAQ</a>
-                    </li>
-                </ul>
-                <div class="language">
-                    <div class="language-selected">
-                        English
-                    </div>
-                    <ul>
-                        <li><a href="../ES/screens/sobre-nosotros.html" class="es">Español</a></li> <!-- es --->
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./AboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Extras.html">Extras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./BookNow.html">Book now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./FAQ.html">FAQ</a>
+                        </li>
                     </ul>
+                    <div class="language">
+                        <div class="language-selected">
+                            English
+                        </div>
+                        <ul>
+                            <li><a href="../ES/screens/sobre-nosotros.html" class="es">Español</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
     <header class="hero">
         <section class="hero_container">
-            <img src="../img/titulos-03.png" class="slide" alt="">
+            <img src="../img/titles/titulos-03.png" class="slide" alt="">
         </section>
     </header>
     <main>
         <br>
-        <!-- <section class="hero_universal container">
-            <div class="title">
-                <h1>About Us</h1>
-                <img src="../img/business-card.png" alt="aboutus">
-            </div>
-        </section> -->
-        <!-- <br> -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -88,13 +91,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/aboutus(1).jpg" class="d-block w-100" alt="">
+                    <img src="../img/aboutus/aboutus(1).jpg" class="d-block w-100" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/aboutus(2).jpg" class="d-block w-100" alt="">
+                    <img src="../img/aboutus/aboutus(2).jpg" class="d-block w-100" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/aboutus(3).jpg" class="d-block w-100" alt="">
+                    <img src="../img/aboutus/aboutus(3).jpg" class="d-block w-100" alt="">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -111,7 +114,7 @@
         <br>
         <div class="paragraph">
             <div class="title-universal">
-                <img src="../img/titulos-01.png" alt="title">
+                <img src="../img/titles/titulos-01.png" alt="title">
                 <!-- <h3>TWO MOMS, ONE DREAM...</h3> -->
             </div>
             <p>Our friendship began with our children. In 2021 both were diagnosed with autism spectrum
@@ -125,28 +128,11 @@
                 clean, and elegant event. Taking care of every detail and offering the best service possible to
                 our customers.</p>
         </div>
-
-
-        <!-- <div class="paragraph-about">
-            <b>DOS MAMÁS, UN SUEÑO...</b>
-            <p>Our friendship began with our children. In 2021 both were diagnosed with autism spectrum
-                disorder, from that moment our need to be owners of our time began in order to accompany
-                and share each stage of development and growth</p>
-    
-            <p>In the constant struggle with the development of sensory and motor skills of our children,
-                we came up with the idea, an idea that is now a dream called &quot;Brandon Luxury events&quot; where we
-                combine fun with the development of motor and sensory skills.</p>
-    
-            <p>Our children were the motivation behind making magic possible and awakening in us the same
-                passion where we put all our love and creativity to make your event the most fun, unique, safe,
-                clean, and elegant event. Taking care of every detail and offering the best service possible to
-                our customers.</p>
-        </div> -->
         <br>
     </main>
     <section class="pie">
         <div class="pie-container">
-            <img src="../img/PAGINA WEB BENDON 2-07.png" alt="">
+            <img src="../img/titles/PAGINA WEB BENDON 2-07.png" alt="">
         </div>
     </section>
     <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank" class="btn-wsp" target="_blank">

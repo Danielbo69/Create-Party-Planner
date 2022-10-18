@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bendon Luxury Events</title>
+    <!-- icono -->
+    <link rel="icon" href="../../img/icons/globos (1).png">
+    <!-- estilos css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/normalice.css">
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <!--Símbolo de Carga-->
+    <div id="contenedor_loader">
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="nav-img" src="../../img/titles/PAGINA WEB BENDON-17.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index-es.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./paquetes.html">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./extras.html">Extras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./reservar.html">Reserva Ahora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
+                    <div class="language-es">
+                        <div class="language-selected-es">
+                            Español
+                        </div>
+                        <ul>
+                            <li><a href="../../screens/Packages.html" class="en">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <section class="hero_container">
+            <img src="../../img/titles/paquetes.png" class="slide" alt="">
+        </section>
+    </header>
+
+    <main>
+        <div class="packages-container">
+            <div class="card-container">
+                <div class="card page col-lg">
+                    <img src="../../img/packages/unique.jpg" class="card-img-top" id="imgPortada" alt="...">
+                    <div class="card-body">
+                        <img src="../../img/titles/paquete unico.png" alt="">
+                        <p class="card-text text-center">No Incluye Inflable.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Piscina de bolas 4.5x3.2ft</li>
+                        <li class="list-group-item">Cerca</li>
+                        <li class="list-group-item">Alfombra Suave </li>
+                        <li class="list-group-item">Un hopper</li>
+                        <li class="list-group-item">Un Coche Blando </li>
+                        <li class="list-group-item">Un juego suave</li>
+                        <li class="list-group-item">Tres bloques blandos 25x25x25cm </li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="price">
+                            <p class="card-text">Precio: </p>
+                            <p class="card-text"> $420</p>
+                        </div>
+                        <a href="../screens/reservar.html" class="btn btn-primary" id="btn-packages">Reserva Ahora</a>
+                    </div>
+                </div>
+                <div class="card page col-lg">
+                    <img src="../../img/packages/dream.jpg" class="card-img-top" id="imagenPortada" alt="...">
+                    <div class="card-body">
+                        <img src="../../img/titles/paquete sueño.png" alt="">
+                        <p class="card-text text-center">No Incluye Inflable.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Piscina de bolas 4x5 ft</li>
+                        <li class="list-group-item"> Cerca</li>
+                        <li class="list-group-item"> Alfombra Suave</li>
+                        <li class="list-group-item"> Un hopper</li>
+                        <li class="list-group-item"> Un Coche Blando</li>
+                        <li class="list-group-item"> Un juego suave</li>
+                        <li class="list-group-item"> Un Tobogán</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="price">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">$480</p>
+                        </div>
+                        <a href="../screens/reservar.html" class="btn btn-primary" id="btn-packages">Reserva Ahora</a>
+                    </div>
+                </div>
+                <div class="card page col-lg">
+                    <img src="../../img/packages/gold.jpg" class="card-img-top" id="imagenPortada" alt="...">
+                    <div class="card-body">
+                        <img src="../../img/titles/paquete oro.png" alt="">
+                        <p class="card-text text-center">No Incluye Inflable.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> Piscina de bolas 5x5 ft</li>
+                        <li class="list-group-item"> Cerca</li>
+                        <li class="list-group-item"> Alfombra Suave </li>
+                        <li class="list-group-item"> Un Coche Blando</li>
+                        <li class="list-group-item"> Un Juego Suave</li>
+                        <li class="list-group-item"> Un Tobogán</li>
+                        <li class="list-group-item"> Dos hopper</li>
+                        <li class="list-group-item"> Tres bloques blandos 15x15x15 cm</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="price">
+                            <p class="card-text">Precio:</p>
+                            <p class="card-text">$520</p>
+                        </div>
+                        <a href="../screens/reservar.html" class="btn btn-primary" id="btn-packages">Reserva Ahora</a>
+                    </div>
+                </div>
+                <div class="card page col-lg">
+                    <img src="../../img/packages/deluxe.jpg" class="card-img-top" id="imagenPortada" alt="...">
+                    <div class="card-body">
+                        <img src="../../img/titles/paquete lujo.png" alt="">
+                        <p class="card-text text-center">No Incluye Inflable.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Piscina de bolas 5x5 ft</li>
+                        <li class="list-group-item">Cerca</li>
+                        <li class="list-group-item">Alfombra Suave</li>
+                        <li class="list-group-item">Un Juego Suave</li>
+                        <li class="list-group-item">Dos hopper</li>
+                        <li class="list-group-item">Dos Coches Blandos</li>
+                        <li class="list-group-item">Dos Toboganes</li>
+                        <li class="list-group-item">Tres bloques blandos 25x25x25 cm</li>
+                    </ul>
+                    <div class="card-body">
+                        <div class="price">
+                            <p class="card-text">Precio: </p>
+                            <p class="card-text"> $580</p>
+                        </div>
+                        <a href="../screens/reservar.html" class="btn btn-primary" id="btn-packages">Reserva Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="pie">
+        <div class="pie-container">
+            <img src="../../img/titles/PAGINA WEB BENDON 2-07.png" alt="">
+        </div>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <script src="../../js/loader.js"></script>
+</body>
+
+</html>

@@ -3,6 +3,8 @@ let question = document.querySelectorAll('.question');
 let btnDropdown = document.querySelectorAll('.question #more')
 let answer = document.querySelectorAll('.answer');
 
+let local = window.location.pathname;
+console.log(local)
 for (let i = 0; i < btnDropdown.length; i++) {
     // let altoParrafo = parrafo[i].clientHeight;
     let switchc = 0;
@@ -10,13 +12,21 @@ for (let i = 0; i < btnDropdown.length; i++) {
         if (switchc == 0) {
             answer[i].style.display = `block`;
             question[i].style.marginBottom = '10px';
-            btnDropdown[i].innerHTML = '<img src="../img/minus.svg" alt="minus">';
+            if(local === '/ES/screens/preguntas-frecuentes.html'){
+                btnDropdown[i].innerHTML = '<img src="../../img/icons/minus.svg" alt="minus">';
+            } else {
+                btnDropdown[i].innerHTML = '<img src="../img/icons/minus.svg" alt="minus">';
+            }
             switchc++;
 
         } else if (switchc == 1) {
             answer[i].style.display = `none`;
             question[i].style.marginBottom = '0';
-            btnDropdown[i].innerHTML = '<img src="../img/plus.svg" alt="plus">';
+            if(local === '/ES/screens/preguntas-frecuentes.html'){
+                btnDropdown[i].innerHTML = '<img src="../../img/icons/plus.svg" alt="plus">';
+            }else {
+                btnDropdown[i].innerHTML = '<img src="../img/icons/plus.svg" alt="plus">';
+            }
             switchc--;
         }
     })

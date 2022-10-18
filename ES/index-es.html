@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bendon Luxury Events</title>
     <!-- icono -->
-    <link rel="icon" href="../img/globos (1).png">
+    <link rel="icon" href="../img/icons/globos (1).png">
     <!-- estilos css -->
-    <link rel="stylesheet" href="../css/style-es.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalice.css">
     <!--Icon-Font-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -19,77 +19,76 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 </head>
 
 <body>
+    <!--Símbolo de Carga-->
+    <div id="contenedor_loader">
+        <div class="loader" id="loader"></div>
+    </div>
 
-    <header class="hero">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <img class="nav-img" src="../img/PAGINA WEB BENDON-17.png" alt="">
-                <!-- <a class="navbar-brand" href="#">Bendon Luxury Events</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="nav-img" src="../img/titles/PAGINA WEB BENDON-17.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="offcanvas-body">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Paquetes
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link active" aria-current="page" href="./index-es.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre nosotros</a>
+                            <a class="nav-link" aria-current="page" href="./screens/sobre-nosotros.html">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Preguntas Frecuentes</a>
+                            <a class="nav-link" aria-current="page" href="./screens/paquetes.html">Paquetes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Reservar Ahora</a>
+                            <a class="nav-link" aria-current="page" href="./screens/extras.html">Extras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                            <a class="nav-link" aria-current="page" href="./screens/reservar.html">Reserva Ahora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./screens/preguntas-frecuentes.html">Preguntas Frecuentes</a>
                         </li>
                     </ul>
-                    <div class="language">
-                        <div class="language-selected">
+                    <div class="language-es">
+                        <div class="language-selected-es">
                             Español
                         </div>
                         <ul>
-                            <li><a href="../index.html" class="en">English</a></li> <!-- en --->
+                            <li><a href="../index.html" class="en">English</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </nav>
-        <br>
-        <section class="hero_container container">
-            <img src="../img/original.png" alt="">
-            <!-- <h1 class="hero_title">Aprende CSS3 desde CERO hasta dominarlo.</h1>
-            <p class="hero_paragraph">Elige aprender CSS de una vez por todas, una vez que termines este curso serás
-                capaz de crear cualquier layout con CSS y crear tus propias animaciones.</p>
-            <a class="cta">Comienza ahora</a> -->
+        </div>
+    </nav>
+    <header class="hero">
+        <section class="hero_container">
+            <img src="../img/titles/original.png" class="slide" alt="">
         </section>
     </header>
 
     <main>
         <div class="welcome-container">
-            <img src="../img/PAGINA WEB BENDON 2-06.png" alt="">
+            <img src="../img/titles/bienvenidos.png" alt="">
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -97,16 +96,36 @@
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 1"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../img/PAGINA WEB BENDON-11.png" class="d-block w-100" alt="">
+                    <img src="../img/home/unnamed.jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/PAGINA WEB BENDON-12.png" class="d-block w-100" alt="">
+                <div class="carousel-item ">
+                    <img src="../img/home/unnamed (1).jpg" class="d-block w-100" alt="">
                 </div>
-                <div class="carousel-item">
-                    <img src="../img/PAGINA WEB BENDON-13.png" class="d-block w-100" alt="">
+                <div class="carousel-item ">
+                    <img src="../img/home/unnamed(2).jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item ">
+                    <img src="../img/home/unnamed(3).jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item ">
+                    <img src="../img/home/unnamed(4).jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item ">
+                    <img src="../img/home/unnamed(5).jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item ">
+                    <img src="../img/home/unnamed(6).jpg" class="d-block w-100" alt="">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -120,10 +139,12 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-        <div class="paragraph-container">
-            <img src="../img/PAGINA WEB BENDON-06.png" alt="">
-            <p class="paragraph">Somos una compañía que ofrece las más lujosas decoraciones con globos completamente
+        <div class="paragraph">
+            <div class="title-universal">
+                <img src="../img/titles/tituloshome.png" alt="">
+            </div>
+            <p>
+                Somos una compañía que ofrece las más lujosas decoraciones con globos completamente
                 personalizadas para cada uno de nuestros clientes sin importar edad, para que así se sientan
                 únicos y auténticos en su mejor día. También ofrecemos las más sofisticadas y lujosas piscina
                 de pelotas y juegos suaves para que los más pequeños jueguen durante su fiesta o evento,
@@ -132,116 +153,38 @@
                 alrededores.
             </p>
         </div>
+        <div class="container">
+        </div>
 
         <section class="container about">
             <div class="about_main">
-                <article class="about_icons">
-                    <img src="../img/logos peq-09.png" class="about_icon" alt="">
+                <div class="about_icons">
+                    <img src="../img/home/logos peq-09.png" class="about_icon" alt="">
                     <a href="https://www.instagram.com/bendonluxuryevents/" target="_blank">@bendonluxuryevents</a>
-                </article>
-                <article class="about_icons">
-                    <img src="../img/logos peq-10.png" class="about_icon" alt="">
+                </div>
+                <div class="about_icons">
+                    <img src="../img/home/logos peq-10.png" class="about_icon" alt="">
                     <a href="mailto:bendonluxury.events@gmail.com" target="_blank"
                         rel="noopener noreferrer">bendonluxury.events@gmail.com</a>
-                </article>
-                <article class="about_icons">
-                    <img src="../img/logos peq-08.png" class="about_icon" alt="">
+                </div>
+                <div class="about_icons">
+                    <img src="../img/home/logos peq-08.png" class="about_icon" alt="">
                     <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank"
                         rel="noopener noreferrer">+16158104614</a>
-                </article>
+                </div>
             </div>
         </section>
 
         <section class="pie">
             <div class="pie-container">
-                <img src="../img/PAGINA WEB BENDON 2-07.png" alt="">
+                <img src="../img/titles/PAGINA WEB BENDON 2-07.png" alt="">
             </div>
-            <!-- <div class="knowledge_container container">
-                <div class="knowledge_texts">
-                    <h2 class="subtitle">Curso completo de CSS3 de una vez por todas!</h2>
-                    <p class="knowledge_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                        pariatur nostrum cupiditate cumque blanditiis. Eius ipsa ex nobis soluta non? Hic consequuntur
-                        necessitatibus sint, voluptas molestiae blanditiis rem qui praesentium?</p>
-                    <a href="#" class="cta">Entra al curso</a>
-                </div>
-                <figure class="knowledge_picture">
-                    <img src="./img/img6.jpg" class="knowledge_img" alt="">
-                </figure>
-            </div> -->
-
         </section>
     </main>
-
-    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/img1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/img2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/img3.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/img4.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/img5.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/img6.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> -->
-
-    <!-- <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bendon Luxury Events</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
-    <a href="https://api.whatsapp.com/send?phone=16158104614" class="btn-wsp" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank" class="btn-wsp" target="_blank">
         <i class="fa fa-whatsapp icono"></i>
     </a>
-    <script src="../js/app.js"></script>
+    <script src="../js/loader.js"></script>
 </body>
 
 </html>

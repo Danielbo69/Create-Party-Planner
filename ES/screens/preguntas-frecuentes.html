@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bendon Luxury Events</title>
+    <!-- icono -->
+    <link rel="icon" href="../../img/icons/globos (1).png">
+    <!-- estilos css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/normalice.css">
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <!--Símbolo de Carga-->
+    <div id="contenedor_loader">
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="nav-img" src="../../img/titles/PAGINA WEB BENDON-17.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index-es.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./paquetes.html">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./extras.html">Extras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./reservar.html">Reserva Ahora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./preguntas-frecuentes.html">Preguntas
+                                Frecuentes</a>
+                        </li>
+                    </ul>
+                    <div class="language-es">
+                        <div class="language-selected-es">
+                            Español
+                        </div>
+                        <ul>
+                            <li><a href="../../screens/FAQ.html" class="en">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <section class="hero_container">
+            <img src="../../img/titles/preguntas frecuentes.png" class="slide" alt="">
+        </section>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="container-faq">
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Que es una Decoración con Globos?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                • Son técnicas usadas por los artistas de globos para obtener magníficas figuras (arcos,
+                                garlands, flores, caricaturas..) que se adapten y creen ambientes decorativos, coloridos
+                                de forma única, lujosa y original.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Que es un juego suave?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>
+                                • Es un área de juegos interactivos que se instala dentro/fuera de casa o evento
+                                privado,
+                                diseñado para crear diversión y permitir a los más pequeños jugar de forma segura y
+                                limpia.
+                                Está hecho de espuma, es suave y delicado para que los niños puedan disfrutar, explorar
+                                y
+                                desarrollar habilidades motrices, sensoriales y sociales.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Cuáles son tus reglas para el área de juego?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• No zapatos.</p>
+                            <p>• No se permite caras pintadas.</p>
+                            <p>• No se permite gomas de mascar, comidas o bebidas dentro del área de juego.</p>
+                            <p>• No se permite el ingreso a niños mayores de 5 años.</p>
+                            <p>• No cambiar pañales dentro del área de juegos.</p>
+                            <p>• Siempre debe estar una de los padres supervisando a su hijo en todo momento.</p>
+                            <p>• Siempre las bolas deben permanecer dentro de la piscina de pelotas y todos nuestros juegos
+                                deben estar dentro del área.</p>
+                            <p>• Se cobrará una tarifa adicional si se rompen alguna de las reglas./</p>
+                        </div>
+                    </div>
+
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Qué ventajas tiene el soft play?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• Interacción con más niños.</p>
+                            <p>• Desarrollo de la imaginación.</p>
+                            <p>• Fomenta el juego activo.</p>
+                            <p>• Ofrece diversión y entretenimiento.</p>
+                            <p>• Desarrollo de habilidades motoras, sensoriales y sociales.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Con que tiempo de anticipacion llegan al evento?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>•Ppara decoración con globos o soft play se llega regularmente de 2 a 4 horas antes del evento.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Desinfectan el equipo de soft play antes de cada evento?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• Todo el equipo se desinfecta después de cada evento, incluido las pelotas. Utilizamos
+                                productos no tóxicos y luego limpiamos con toallitas desinfectantes con alcohol puro al 100%
+                                para eliminar toda bacteria/virus.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Usan brillo de globos en instalaciones dentro de casa o al aire libre?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• El brillo solo se agregara si se configura completamente bajo la sombra.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Qué pasa si llueve?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• Si celebras tu evento al aire libre, tu eres responsable de los cambios del clima.</p>
+                            <p> Por seguridad de los pequeños no se instalarán las áreas de juego ni decoraciones de globos si
+                                hay lluvia en el pronóstico del tiempo. Siempre se recomienda tener como segunda opción un
+                                espacio en el interior. Sin embargo, puede reprogramar su evento si lo desea, en función de
+                                disponibilidad.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Métodos de pago?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• Pagos zelle.</p>
+                            <p> Para garantizar su fecha debe pagar el 30% del total de su factura y el otro 70% debe pagarse
+                                24 horas antes del evento.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Política de cancelación?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• ¡Los depósitos no son reembolsables!</p>
+                            <p> Si lo deseas puedes cambiar la fecha de tu evento basado en nuestra disponibilidad y usar el
+                                crédito.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Entrega?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• La entrega está incluida hasta 8 millas en el área 37086. Más de 8 millas tendrán una tarifa
+                                adicional. Entregamos hasta 30 millas de nuestra zona actual.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Cuáles son las edades permitidas para los juegos suaves?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• La edad permitida es de 0-5 años.</p>
+                        </div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="question">
+                            <div class="info-ques">
+                                <i><img src="../../img/icons/info.svg" alt="info"></i>
+                                <h3>¿Puedes personalizar el área de juego?</h3>
+                            </div>
+                            <div class="info-plus">
+                                <button type="button" class="btn btn-light" id="more"><img
+                                        src="../../img/icons/plus.svg" alt="plus"></button>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>• Si, por un costo adicional, dándote un toque único y original a tu evento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="pie">
+        <div class="pie-container">
+            <img src="../../img/titles/PAGINA WEB BENDON 2-07.png" alt="">
+        </div>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <script src="../../js/faq.js"></script>
+    <script src="../../js/loader.js"></script>
+</body>
+
+</html>

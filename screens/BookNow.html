@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now</title>
     <!-- icono -->
-    <link rel="icon" href="../img/globos (1).png">
+    <link rel="icon" href="../img/icons/globos (1).png">
     <!-- estilos css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalice.css">
@@ -23,16 +23,15 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <!-- cdn sweetalert2 -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
 </head>
 
 <body>
@@ -42,51 +41,62 @@
     </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <img class="nav-img" src="../img/PAGINA WEB BENDON-17.png" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="nav-img" src="../img/titles/PAGINA WEB BENDON-17.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./AboutUs.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./Packages.html">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./BookNow.html">Book now</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./FAQ.html">FAQ</a>
-                    </li>
-                </ul>
-                <div class="language">
-                    <div class="language-selected">
-                        English
-                    </div>
-                    <ul>
-                        <li><a href="../ES/screens/reservar.html" class="es">Español</a></li> <!-- es --->
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./AboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Extras.html">Extras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./BookNow.html">Book now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./FAQ.html">FAQ</a>
+                        </li>
                     </ul>
+                    <div class="language">
+                        <div class="language-selected">
+                            English
+                        </div>
+                        <ul>
+                            <li><a href="../ES/screens/reservar.html" class="es">Español</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
     <header class="hero">
         <section class="hero_container container">
-            <img src="../img/PAGINA WEB BENDON 3-13.png" class="slide" alt="">
+            <img src="../img/titles/PAGINA WEB BENDON 3-13.png" class="slide" alt="">
         </section>
     </header>
 
     <main>
         <br>
         <div class="booknow-container container">
-            <p class="h5 m-top">Please note that your reservation will not be official until the 30% deposit has
+            <p class="h5 texto-booknow m-top">Please note that your reservation will not be official until the 30%
+                deposit has
                 been
                 paid.
                 The rest must be paid 24 hours before the event by zelle. Delivery rate depends on location.
@@ -94,7 +104,7 @@
                 use over 5 years activities.
             </p>
 
-            <p class="h5">We respond to all inquiries within 24 hours, Thank you for considering
+            <p class="h5 texto-booknow">We respond to all inquiries within 24 hours, Thank you for considering
                 <mark>Brandon Luxury Events</mark>.
             </p>
 
@@ -108,22 +118,27 @@
                         Decoration</button>
                 </div>
             </div>
-            <form action="../php/sendEmail.php" name="softplay" method="POST" id="softplay" class="slideanim" style="display: none;">
+            <!-- Form SoftPlay -->
+            <form action="../php/sendEmail.php" name="softplay" method="POST" id="softplay" class="slideanim"
+                style="display: none;">
                 <label for="" style="text-align: center; width: 100%;">Soft Play</label>
                 <div class="booknow-formcontrol row">
                     <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../img/user.svg" alt="name"></span>
+                        <span class="input-group-text" id="basic-addon1"><img src="../img/icons/user.svg"
+                                alt="name"></span>
                         <input type="text" class="form-control" id="name" placeholder="Your name" aria-label="Yourname"
                             aria-describedby="basic-addon1" required>
                     </div>
                     <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon2"><img src="../img/email.svg" alt="email"></span>
+                        <span class="input-group-text" id="basic-addon2"><img src="../img/icons/email.svg"
+                                alt="email"></span>
                         <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Email"
                             aria-describedby="basic-addon2" required>
                         <span class="input-group-text" id="basic-addon1">@example.com</span>
                     </div>
                     <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../img/phone.svg" alt="phone"></span>
+                        <span class="input-group-text" id="basic-addon1"><img src="../img/icons/phone.svg"
+                                alt="phone"></span>
                         <input type="text" class="form-control" id="phone"
                             placeholder="Cell phone number/ with numeric code" aria-label="phonenumber"
                             aria-describedby="basic-addon1" maxlength="11" onkeypress="return valideKey(event);"
@@ -133,8 +148,14 @@
                 <div class="booknow-formcontrol row">
                     <br>
                     <div class="input-form col-lg">
-                        <label for="" style="margin: 10px">PACKAGES INCLUDE UP TO 4 HOURS OF FUN. ADDITIONAL HOUR $100.
-                            (WE DON'T COUNT SETUP TIME)</label>
+                        <div class="texto-booknow"
+                            >
+                            <p style="width: 100%; padding: 10px;">
+                                PACKAGES INCLUDE UP TO 4 HOURS OF FUN. ADDITIONAL
+                                HOUR $100.
+                                (WE DON'T COUNT SETUP TIME)
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="booknow-formcontrol row">
@@ -143,35 +164,32 @@
                         <div class="input-group date" id="datepicker">
                             <input type="text" class="form-control" id="dateEvent">
                             <span class="input-group-append">
-                                <span class="input-group-text" id="basic-addon1"><img src="../img/calendar.svg"
+                                <span class="input-group-text" id="basic-addon1"><img src="../img/icons/calendar.svg"
                                         alt="calendar"></span>
                             </span>
                         </div>
                     </div>
-                    <!-- <div class="input-group date col-lg" id="datetimepicker1">
-                        <input type='text' class="form-control" />
-                        <span class="input-group-text" id="basic-addon1"><img src="../img/calendar.svg"
-                                alt="calendar"></span>
-                    </div> -->
                     <div class="input-form col-lg">
-                        <span class="input-group-text"><img src="../img/map.svg" alt="map"></span>
+                        <span class="input-group-text"><img src="../img/icons/map.svg" alt="map"></span>
                         <textarea class="form-control" placeholder="Event Adress (Including zip code)"
                             aria-describedby="basic-addon1" rows="2" cols="2" id="adress" required></textarea>
                     </div>
                     <div class="input-form col-lg">
-                        <input type="text" class="form-control" placeholder="Type of event (celebration y theme)"
+                        <input type="text" class="form-control" placeholder="Type of event (celebration and theme)"
                             aria-label="typevent" aria-describedby="basic-addon1" id="typeEvent" required>
                     </div>
                 </div>
                 <div class="booknow-formcontrol row">
+                    <span class="text-group">Event start time</span>
                     <div class="input-form col-lg">
-                        <span class="input-group-text">Event start time</span>
+                        <span class="input-group-text"><img src="../img/icons/time.svg" alt=""></span>
                         <select class="form-select" aria-label="Default select example" id="startEvent" required>
 
                         </select>
                     </div>
+                    <span class="text-group">Event end time <b>(max 9:00pm)</b></span>
                     <div class="input-form col-lg">
-                        <span class="input-group-text">Event end time <b>(max 9:00pm)</b></span>
+                        <span class="input-group-text"><img src="../img/icons/timeend.svg" alt=""></span>
                         <select class="form-select" aria-label="Default select example" id="endEvent" required>
                         </select>
                     </div>
@@ -186,6 +204,7 @@
                             <option value="10+">10+</option>
                         </select>
                     </div>
+                    <br>
                     <span class="text-group">Please select indoor or outdoor?</span>
                     <div class="input-form col-lg">
                         <select class="form-select" aria-label="Default select example" id="inOutdoor" required>
@@ -264,30 +283,9 @@
                 </div>
                 <div class="booknow-formcontrol row">
                     <div class="form-check col-lg">
-                        <span class="text-group">Package color?</span>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="White" id="packagesColor">
-                            <label class="form-check-label" for="packagesColor">
-                                White.
-                            </label>
-                        </div>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="White and pink" id="packagesColor">
-                            <label class="form-check-label" for="packagesColor">
-                                White and pink.
-                            </label>
-                        </div>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="White and blue" id="packagesColor">
-                            <label class="form-check-label" for="packagesColor">
-                                White and blue.
-                            </label>
-                        </div>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="White and gray" id="packagesColor">
-                            <label class="form-check-label" for="packagesColor">
-                                White and gray.
-                            </label>
+                        <span class="text-group">Please write package color?</span>
+                        <div class="input-form col-lg">
+                            <input type="text" class="form-control" placeholder="Packages color" id="packagesColor">
                         </div>
                     </div>
                     <div class="form-check col-lg">
@@ -394,7 +392,7 @@
                             </label>
                         </div>
                         <br>
-                        <div class="form-check col-lg" id="ballColor-container" style="display: none;">
+                        <div class="input-form col-lg" id="ballColor-container" style="display: none;">
                             <span class="text-group">Please write the ball colors.</span>
                             <div class="input-form">
                                 <input type="text" class="form-control" placeholder="Ball color?" aria-label="ballColor"
@@ -402,11 +400,10 @@
                             </div>
                         </div>
                         <br>
-                        <div class="form-check col-lg" id="customizeIt-container" style="display: none;">
+                        <div class="input-form col-lg" id="customizeIt-container" style="display: none;">
                             <span class="text-group">Please fill in the ball pit field.</span>
                             <div class="input-form">
-                                <input type="text" class="form-control"
-                                    placeholder="Customize it (write here your text to put on the ball pit)"
+                                <input type="text" class="form-control" placeholder="Write here your text"
                                     aria-label="ballColor" aria-describedby="basic-addon1" id="CustomizeIt" required>
                             </div>
                         </div>
@@ -424,44 +421,48 @@
                 </div>
                 <br>
                 <div class="input-form col-lg">
-                    <p class="h5">
-                        <mark>
+                    <div class="texto-booknow">
+                        <p class="h5" style="padding: 20px; border-radius: 50px;">
                             $90 refundable cleaning deposit will be added to your bill. I understand this will be
                             refunded
                             only if the area/equipment is clean, dry, not damaged, not stained, not moved and balls
                             are
                             inside the ball pit at time of pick-up.
-                            <br>
+                            <br><br>
                             We have a very strict policy and guidelines when using our services. The day of the
                             event
                             you will be given a contract which must be signed to guarantee that you understand and
                             accept our policies.
-                        </mark>
-                    </p>
+                        </p>
+                    </div>
                 </div>
-                <!--Enviar-->
+                <!--Send-->
                 <div class="container" id="envio">
-                    <button type="button" name="enviar" id="send" onclick="sendForm()"
+                    <button type="button" name="send" id="send" onclick="sendForm('Softplay')"
                         class="btn btn-block">RESERVE</button>
                 </div>
             </form>
 
+            <!-- Form Balloons -->
             <form action="" method="post" id="balloons" style="display: none;">
                 <label for="" style="text-align: center; width: 100%;">Balloons Decoration</label>
                 <div class="booknow-formcontrol row">
                     <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../img/user.svg" alt="name"></span>
+                        <span class="input-group-text" id="basic-addon1"><img src="../img/icons/user.svg"
+                                alt="name"></span>
                         <input type="text" class="form-control" placeholder="Your name" aria-label="Yourname"
                             aria-describedby="basic-addon1" required>
                     </div>
                     <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon2"><img src="../img/email.svg" alt="email"></span>
+                        <span class="input-group-text" id="basic-addon2"><img src="../img/icons/email.svg"
+                                alt="email"></span>
                         <input type="text" class="form-control" placeholder="Email" aria-label="Email"
                             aria-describedby="basic-addon2" required>
                         <span class="input-group-text" id="basic-addon1">@example.com</span>
                     </div>
                     <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../img/phone.svg" alt="phone"></span>
+                        <span class="input-group-text" id="basic-addon1"><img src="../img/icons/phone.svg"
+                                alt="phone"></span>
                         <input type="text" class="form-control" placeholder="Cell phone number/ with numeric code"
                             aria-label="phonenumber" aria-describedby="basic-addon1" maxlength="12" required>
                     </div>
@@ -476,12 +477,12 @@
                 <div class="booknow-formcontrol row">
                     <label for="">Date of event</label>
                     <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../img/calendar.svg"
+                        <span class="input-group-text" id="basic-addon1"><img src="../img/icons/calendar.svg"
                                 alt="calendar"></span>
                         <input class="form-control" type="date" value="date" aria-describedby="basic-addon1" required />
                     </div>
                     <div class="input-form col-lg">
-                        <span class="input-group-text"><img src="../img/map.svg" alt="map"></span>
+                        <span class="input-group-text"><img src="../img/icons/map.svg" alt="map"></span>
                         <textarea class="form-control" placeholder="Event Adress (Including zip code)"
                             aria-describedby="basic-addon1" rows="2" cols="2" required></textarea>
                     </div>
@@ -558,7 +559,7 @@
                 </div>
                 <br>
                 <div class="input-form col-lg">
-                    <p class="h5">
+                    <p class="h5 texto-booknow">
                         <mark>
                             A refundable deposit of $80 is required to cover damage to furniture (not included in the
                             value
@@ -568,13 +569,18 @@
                         </mark>.
                     </p>
                 </div>
+                <!--Enviar-->
+                <div class="container" id="envio">
+                    <button type="button" name="send" id="send" onclick="sendForm('Ballons')"
+                        class="btn btn-block">RESERVE</button>
+                </div>
             </form>
         </div>
     </main>
     <br>
     <section class="pie">
         <div class="pie-container">
-            <img src="../img/PAGINA WEB BENDON 2-07.png" alt="">
+            <img src="../img/titles/PAGINA WEB BENDON 2-07.png" alt="">
         </div>
     </section>
     <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank" class="btn-wsp" target="_blank">

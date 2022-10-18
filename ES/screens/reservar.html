@@ -1,12 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bendon Luxury Events</title>
+    <!-- icono -->
+    <link rel="icon" href="../../img/icons/globos (1).png">
+    <!-- estilos css -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/normalice.css">
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- cdn sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
 </head>
+
 <body>
-    <script src="../../js/app.js"></script>
+    <!--Símbolo de Carga-->
+    <div id="contenedor_loader">
+        <div class="loader" id="loader"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img class="nav-img" src="../../img/titles/PAGINA WEB BENDON-17.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index-es.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./paquetes.html">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./extras.html">Extras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./reservar.html">Reserva Ahora</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./preguntas-frecuentes.html">Preguntas
+                                Frecuentes</a>
+                        </li>
+                    </ul>
+                    <div class="language-es">
+                        <div class="language-selected-es">
+                            Español
+                        </div>
+                        <ul>
+                            <li><a href="../../screens/BookNow.html" class="en">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <section class="hero_container">
+            <img src="../../img/titles/reservar.png" class="slide" alt="">
+        </section>
+    </header>
+
+    <main>
+        <br>
+        <div class="booknow-container container">
+            <p class="h5 texto-booknow m-top">
+                Tenga en cuenta que su reserva no será oficial hasta que se haya pagado el 30% del
+                depósito, el resto debe pagarse 24 horas antes del evento a través de Zelle. La tasa de
+                entrega depende de la ubicación.
+                Nuestros alquileres de juegos Suaves son para edades de 0 meses a 5 años SOLAMENTE.
+                Los niños mayores de 5 años no podrán utilizar las actividades.
+            </p>
+
+            <p class="h5 texto-booknow">Respondemos a todas las consultas dentro de las 24 horas. Gracias por considerar
+                <mark>Brandon Luxury Events</mark>.
+            </p>
+
+            <div class="booknow-buttons row">
+                <div class="col-lg">
+                    <button type="button" class="btn-book" onclick="formSelect('soft')" id="formselect">Soft
+                        Play</button>
+                </div>
+                <div class="col-lg">
+                    <button type="button" class="btn-book" onclick="formSelect('balloons')" id="formselect">Balloons
+                        Decoration</button>
+                </div>
+            </div>
+            <!-- Form SoftPlay -->
+            <form action="../php/sendEmail.php" name="softplay" method="POST" id="softplay" class="slideanim"
+                style="display: none;">
+                <label for="" style="text-align: center; width: 100%;">Soft Play</label>
+                <div class="booknow-formcontrol row">
+                    <div class="input-form col-lg">
+                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/user.svg"
+                                alt="name"></span>
+                        <input type="text" class="form-control" id="name" placeholder="Nombre" aria-label="Yourname"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text" id="basic-addon2"><img src="../../img/icons/email.svg"
+                                alt="email"></span>
+                        <input type="text" class="form-control" id="email" placeholder="Correo" aria-label="Email"
+                            aria-describedby="basic-addon2" required>
+                        <span class="input-group-text" id="basic-addon1">@ejemplo.com</span>
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/phone.svg"
+                                alt="phone"></span>
+                        <input type="text" class="form-control" id="phone"
+                            placeholder="Número de celular / con código numérico" aria-label="phonenumber"
+                            aria-describedby="basic-addon1" maxlength="11" onkeypress="return valideKey(event);"
+                            required>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <br>
+                    <div class="input-form col-lg">
+                        <div class="texto-booknow"
+                            >
+                            <p style="width: 100%; padding: 10px;">
+                                LOS PAQUETES INCLUYEN HASTA 4 HORAS DE DIVERSIÓN.
+                                HORA
+                                ADICIONAL $100. (NO CONTAMOS EL TIEMPO DE CONFIGURACIÓN)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <label for="">Fecha del evento</label>
+                    <div class="input-form col-lg">
+                        <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control" id="dateEvent">
+                            <span class="input-group-append">
+                                <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/calendar.svg"
+                                        alt="calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text"><img src="../../img/icons/map.svg" alt="map"></span>
+                        <textarea class="form-control" placeholder="Dirección del evento (incluido el código postal)"
+                            aria-describedby="basic-addon1" rows="2" cols="2" id="adress" required></textarea>
+                    </div>
+                    <div class="input-form col-lg">
+                        <input type="text" class="form-control" placeholder="Tipo de evento (celebración y tema)"
+                            aria-label="typevent" aria-describedby="basic-addon1" id="typeEvent" required>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <span class="text-group">Hora de inicio del evento</span>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text"><img src="../../img/icons/time.svg" alt=""></span>
+                        <select class="form-select" aria-label="Default select example" id="startEvent" required>
+
+                        </select>
+                    </div>
+                    <span class="text-group">Hora de finalización del evento <b>(max 9:00pm)</b></span>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text"><img src="../../img/icons/timeend.svg" alt=""></span>
+                        <select class="form-select" aria-label="Default select example" id="endEvent" required>
+                        </select>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <span class="text-group">Cantidad estimada de niños (edades 5 y menores)</span>
+                    <div class="input-form col-lg">
+                        <select class="form-select" aria-label="Default select example" id="ages" required>
+                            <option value="">Seleccione</option>
+                            <option value="1-4">1-4</option>
+                            <option value="5-8">5-8</option>
+                            <option value="10+">10+</option>
+                        </select>
+                    </div>
+                    <br>
+                    <span class="text-group">Seleccione interior o exterior</span>
+                    <div class="input-form col-lg">
+                        <select class="form-select" aria-label="Default select example" id="inOutdoor" required>
+                            <option value="">Seleccione</option>
+                            <option value="Interior">Interior</option>
+                            <option value="Exterior">Exterior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <div class="form-check col-md">
+                        <span class="text-group">Seleccione el área de instalación (marque todo lo que
+                            corresponda).</span>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox"
+                                value="La zona se establecerá en suelo duro." id="area">
+                            <label class="form-check-label" for="Area">
+                                La zona se establecerá en suelo duro.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="La zona se establecerá sobre césped."
+                                id="area">
+                            <label class="form-check-label" for="Area">
+                                La zona se establecerá sobre césped.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox"
+                                value="La zona se establecerá en la alfombra." id="area">
+                            <label class="form-check-label" for="Area">
+                                La zona se establecerá en la alfombra.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox"
+                                value="Ascensor necesario para llegar al área de instalación." id="area">
+                            <label class="form-check-label" for="Area">
+                                Ascensor necesario para llegar al área de instalación.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox"
+                                value="Se necesitan escaleras para llegar al área de instalación." id="area">
+                            <label class="form-check-label" for="Area">
+                                Se necesitan escaleras para llegar al área de instalación.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check col-md">
+                        <span class="text-group">Por favor seleccione el paquete interesado.</span>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Paquete Único" id="package">
+                            <label class="form-check-label" for="package">
+                                Paquete Único
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Paquete Sueño" id="package">
+                            <label class="form-check-label" for="package">
+                                Paquete Sueño
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Paquete Oro" id="package">
+                            <label class="form-check-label" for="package">
+                                Paquete Oro
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Paquete de lujo" id="package">
+                            <label class="form-check-label" for="package">
+                                Paquete de lujo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <div class="form-check col-lg">
+                        <span class="text-group">Por favor escriba el color del paquete.</span>
+                        <div class="input-form col-lg">
+                            <input type="text" class="form-control" placeholder="Color de los paquetes"
+                                id="packagesColor">
+                        </div>
+                    </div>
+                    <div class="form-check col-lg">
+                        <span class="text-group">¿Añadir extras?</span>
+
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Castillo Inflable Blanco"
+                                id="extras">
+                            <label for="extras" class="form-check-label">Castillo Inflable Blanco</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Resbalador Rosado Claro" id="extras">
+                            <label for="extras" class="form-check-label">Resbalador Rosado Claro</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Resbalador Azul Claro" id="extras">
+                            <label for="extras" class="form-check-label">Resbalador Azul Claro</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Resbalador blanco" id="extras">
+                            <label for="extras" class="form-check-label">Resbalador Blanco</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Hopper Animal Vaca" id="extras">
+                            <label for="extras" class="form-check-label">Hopper Animal Vaca</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Hopper Animal Jirafa" id="extras">
+                            <label for="extras" class="form-check-label">Hopper Animal Jirafa</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Hopper Animal Conejo" id="extras">
+                            <label for="extras" class="form-check-label">Hopper Animal Conejo</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Hopper Animal Zorro" id="extras">
+                            <label for="extras" class="form-check-label">Hopper Animal Zorro</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Escalador Suave" id="extras">
+                            <label for="extras" class="form-check-label">Escalador Suave</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Soft Play con Cilindro" id="extras">
+                            <label for="extras" class="form-check-label">Soft Play con Cilindro</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Puente de Arcoíris" id="extras">
+                            <label for="extras" class="form-check-label">Puente de Arcoíris</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Coche suave" id="extras">
+                            <label for="extras" class="form-check-label">Coche Suave</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Bloques Suaves 25x25x25" id="extras">
+                            <label for="extras" class="form-check-label">Bloques Suaves 25x25x25
+                                cm</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Bloques Suaves 15x15x15cm"
+                                id="extras">
+                            <label for="extras" class="form-check-label">Bloques Suaves 15x15x15cm</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Piscina de Pelotas Blanca 4.5x 3.2"
+                                id="extras">
+                            <label for="extras" class="form-check-label">Piscina de Pelotas Blanca 4.5x 3.2
+                                ft</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Piscina de Pelotas Blanca 5x5 ft"
+                                id="extras">
+                            <label for="extras" class="form-check-label">Piscina de Pelotas Blanca 5x5 ft</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox"
+                                value="Piscina de Pelotas Blanca y gris 4.5x" id="extras">
+                            <label for="extras" class="form-check-label">Piscina de Pelotas Blanca y gris 4.5x
+                                3.2 ft</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Piscina de Pelotas Blanca y gris 5x5"
+                                id="extras">
+                            <label for="extras" class="form-check-label">Piscina de Pelotas Blanca y gris 5x5
+                                ft</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Piscina Redonda 4.5 ft" id="extras">
+                            <label for="extras" class="form-check-label">Piscina Redonda 4.5 ft</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <div class="form-check col-lg">
+                        <span>¿Quieres personalizar la piscina de bolas?</span>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="radio" value="Si" onclick="radioChange('Yes')"
+                                name="ballPit" id="customizeBall">
+                            <label class="form-check-label" for="customizeBall">
+                                Si.
+                            </label>
+                        </div>
+                        <div class="checks-package col-lg">
+                            <input class="form-check-input" type="radio" value="No" onclick="radioChange('No')"
+                                name="ballPit" id="customizeBall">
+                            <label class="form-check-label" for="customizeBall">
+                                No.
+                            </label>
+                        </div>
+                        <br>
+                        <div class="input-form col-lg" id="ballColor-container" style="display: none;">
+                            <span class="text-group">Por favor escribe los colores de las bolas.</span>
+                            <div class="input-form">
+                                <input type="text" class="form-control" placeholder="Color de la pelota"
+                                    aria-label="ballColor" aria-describedby="basic-addon1" id="ballColor" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="input-form col-lg" id="customizeIt-container" style="display: none;">
+                            <span class="text-group">Por favor, rellene el campo.</span>
+                            <div class="input-form">
+                                <input type="text" class="form-control" placeholder="Write here your text"
+                                    aria-label="ballColor" aria-describedby="basic-addon1" id="CustomizeIt" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol">
+                    <span class="text-group">Optional</span>
+                    <div class="input-form col-lg">
+                        <textarea class="form-control"
+                            placeholder="Detalles adicionales que podemos necesitar saber sobre su evento"
+                            aria-describedby="basic-addon1" rows="2" cols="2" id="additionalDetails"
+                            required></textarea>
+
+                    </div>
+                </div>
+                <br>
+                <div class="input-form col-lg">
+                    <div class="texto-booknow">
+                        <p class="h5 "  style="padding: 20px; border-radius: 50px;">
+                            Será agregado un depósito de limpieza reembolsable de 90$ a su factura. Entendido que
+                            esto solo será reembolsado si el área/ equipo está limpio, seco, no danado, no manchado,
+                            no es movido de su lugar y si las bolas están dentro de la piscina de pelotas en el momento
+                            de la recogida.
+                            <br><br>
+                            Tenemos una política y pautas muy estrictas al usar nuestros servicios. El día del evento se
+                            le entregará un contrato el cual debe ser firmado para garantizar que comprende y acepta
+                            nuestras políticas.
+                        </p>
+                    </div>
+                </div>
+                <!--Send-->
+                <div class="container" id="envio">
+                    <button type="button" name="send" id="send" onclick="sendForm('Softplay')"
+                        class="btn btn-block">RESERVAR</button>
+                </div>
+            </form>
+
+            <!-- Form Balloons -->
+            <form action="" method="post" id="balloons" style="display: none;">
+                <label for="" style="text-align: center; width: 100%;">Balloons Decoration</label>
+                <div class="booknow-formcontrol row">
+                    <div class="input-form col-lg">
+                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/user.svg"
+                                alt="name"></span>
+                        <input type="text" class="form-control" placeholder="Your name" aria-label="Yourname"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text" id="basic-addon2"><img src="../../img/icons/email.svg"
+                                alt="email"></span>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="basic-addon2" required>
+                        <span class="input-group-text" id="basic-addon1">@example.com</span>
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/phone.svg"
+                                alt="phone"></span>
+                        <input type="text" class="form-control" placeholder="Cell phone number/ with numeric code"
+                            aria-label="phonenumber" aria-describedby="basic-addon1" maxlength="12" required>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <br>
+                    <div class="input-form col-lg">
+                        <label for="" style="margin: 10px">PACKAGES INCLUDE UP TO 4 HOURS OF FUN. ADDITIONAL HOUR $100.
+                            (WE DON'T COUNT SETUP TIME)</label>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <label for="">Date of event</label>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/calendar.svg"
+                                alt="calendar"></span>
+                        <input class="form-control" type="date" value="date" aria-describedby="basic-addon1" required />
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text"><img src="../../img/icons/map.svg" alt="map"></span>
+                        <textarea class="form-control" placeholder="Event Adress (Including zip code)"
+                            aria-describedby="basic-addon1" rows="2" cols="2" required></textarea>
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text">Type of event</span>
+                        <select class="form-select" aria-label="Default select example" id="startEvent">
+                            <option>Select</option>
+                            <option value="Kids">Kids</option>
+                            <option value="Young">Young</option>
+                            <option value="Adults">Adults</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <div class="input-form col-lg">
+                        <span class="input-group-text">Event start time</span>
+                        <select class="form-select" aria-label="Default select example" id="startEvent">
+
+                        </select>
+                    </div>
+                    <div class="input-form col-lg">
+                        <span class="input-group-text">Event end time <b>(max 9:00pm)</b></span>
+                        <select class="form-select" aria-label="Default select example" id="endEvent">
+                        </select>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <div class="input-form  col-lg">
+                        <input type="text" class="form-control" placeholder="Ball color?" aria-label="ballColor"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol row">
+                    <div class="form-check col-md">
+                        <span class="text-group">Installation Area (Checks all that apply).</span>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Zone will be set on hard floor.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Zone will be set on grass.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Zone will be set on carpet.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Elevator needed to get to set-up area.
+                            </label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                                Stairs needed to get to set-up area.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="booknow-formcontrol">
+                    <div class="input-form col-lg">
+                        <textarea class="form-control"
+                            placeholder="Additional details we may need to know about your event"
+                            aria-describedby="basic-addon1" rows="2" cols="2" required></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="input-form col-lg">
+                    <p class="h5 texto-booknow">
+                        <mark>
+                            A refundable deposit of $80 is required to cover damage to furniture (not included in the
+                            value
+                            of the quote) and it is understood that everything used for decoration will be returned at
+                            the
+                            end of the event.
+                        </mark>.
+                    </p>
+                </div>
+                <!--Enviar-->
+                <div class="container" id="envio">
+                    <button type="button" name="send" id="send" onclick="sendForm('Ballons')"
+                        class="btn btn-block">RESERVAR</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <section class="pie">
+        <div class="pie-container">
+            <img src="../../img/titles/PAGINA WEB BENDON 2-07.png" alt="">
+        </div>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <script src="../../js/loader.js"></script>
+    <script src="../../js/booknow.js"></script>
 </body>
+
 </html>

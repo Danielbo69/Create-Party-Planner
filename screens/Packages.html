@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Packages</title>
     <!-- icono -->
-    <link rel="icon" href="../img/globos (1).png">
+    <link rel="icon" href="../img/icons/globos (1).png">
     <!-- estilos css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalice.css">
@@ -36,63 +36,73 @@
     </div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <img class="nav-img" src="../img/PAGINA WEB BENDON-17.png" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="nav-img" src="../img/titles/PAGINA WEB BENDON-17.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./AboutUs.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./Packages.html">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./BookNow.html">Book now</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./FAQ.html">FAQ</a>
-                    </li>
-                </ul>
-                <div class="language">
-                    <div class="language-selected">
-                        English
-                    </div>
-                    <ul>
-                        <li><a href="../ES/screens/reservar.html" class="es">Español</a></li> <!-- es --->
+            <div class="offcanvas offcanvas-end text-bg" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./AboutUs.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Extras.html">Extras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./BookNow.html">Book now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./FAQ.html">FAQ</a>
+                        </li>
                     </ul>
+                    <div class="language">
+                        <div class="language-selected">
+                            English
+                        </div>
+                        <ul>
+                            <li><a href="../ES/screens/reservar.html" class="es">Español</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
     <header class="hero">
         <section class="hero_container container">
-            <img src="../img/PAGINA WEB BENDON 3-15.png" class="slide" alt="">
+            <img src="../img/titles/PAGINA WEB BENDON 3-15.png" class="slide" alt="">
         </section>
     </header>
     <main>
-        <div class="packages-container container">
-            <div class="card-container row">
-                <div class="card col-lg">
-                    <img src="../img/unique.jpg" class="card-img-top" id="imgPortada" alt="...">
+        <div class="packages-container">
+            <div class="card-container">
+                <div class="card page col-lg">
+                    <img src="../img/packages/unique.jpg" class="card-img-top" id="imgPortada" alt="...">
                     <div class="card-body">
-                        <img src="../img/Package Unique.png" alt="">
+                        <img src="../img/packages/Package Unique.png" alt="">
                         <p class="card-text text-center">Bounce no include.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> Ball pit 4.5*3.2ft</li>
+                        <li class="list-group-item"> Ball pit 4.5x3.2ft</li>
                         <li class="list-group-item"> Fence</li>
                         <li class="list-group-item"> Soft mat </li>
                         <li class="list-group-item"> One hopper</li>
                         <li class="list-group-item"> One soft car </li>
                         <li class="list-group-item"> One soft play</li>
-                        <li class="list-group-item"> Three soft blocks 25*25*25cm </li>
+                        <li class="list-group-item"> Three soft blocks 25x25x25cm </li>
                     </ul>
                     <div class="card-body">
                         <div class="price">
@@ -103,14 +113,14 @@
                             Now</a>
                     </div>
                 </div>
-                <div class="card col-lg">
-                    <img src="../img/dream.jpg" class="card-img-top" id="imagenPortada" alt="...">
+                <div class="card page col-lg">
+                    <img src="../img/packages/dream.jpg" class="card-img-top" id="imagenPortada" alt="...">
                     <div class="card-body">
-                        <img src="../img/Package Dream.png" alt="">
+                        <img src="../img/packages/Package Dream.png" alt="">
                         <p class="card-text text-center">Bounce no include.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> Ball pit 4*5ft</li>
+                        <li class="list-group-item"> Ball pit 4x5ft</li>
                         <li class="list-group-item"> Fence</li>
                         <li class="list-group-item"> Soft mat </li>
                         <li class="list-group-item"> One hopper</li>
@@ -127,21 +137,21 @@
                             Now</a>
                     </div>
                 </div>
-                <div class="card col-lg">
-                    <img src="../img/gold.jpg" class="card-img-top" id="imagenPortada" alt="...">
+                <div class="card page col-lg">
+                    <img src="../img/packages/gold.jpg" class="card-img-top" id="imagenPortada" alt="...">
                     <div class="card-body">
-                        <img src="../img/Package Gold.png" alt="">
+                        <img src="../img/packages/Package Gold.png" alt="">
                         <p class="card-text text-center">Bounce no include.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"> Ball pit 5*5ft</li>
+                        <li class="list-group-item"> Ball pit 5x5ft</li>
                         <li class="list-group-item"> Fence</li>
                         <li class="list-group-item"> Soft mat </li>
                         <li class="list-group-item"> One soft car </li>
                         <li class="list-group-item"> One soft play</li>
                         <li class="list-group-item"> One slide</li>
                         <li class="list-group-item"> Two hopper</li>
-                        <li class="list-group-item"> Three soft blocks 15*15*15cm</li>
+                        <li class="list-group-item"> Three soft blocks 15x15x15cm</li>
                     </ul>
                     <div class="card-body">
                         <div class="price">
@@ -152,21 +162,21 @@
                             Now</a>
                     </div>
                 </div>
-                <div class="card col-lg">
-                    <img src="../img/deluxe.jpg" class="card-img-top" id="imagenPortada" alt="...">
+                <div class="card page col-lg">
+                    <img src="../img/packages/deluxe.jpg" class="card-img-top" id="imagenPortada" alt="...">
                     <div class="card-body">
-                        <img src="../img/Package Deluxe.png" alt="">
+                        <img src="../img/packages/Package Deluxe.png" alt="">
                         <p class="card-text text-center">Bounce no include.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Ball pit 5*5ft</li>
+                        <li class="list-group-item">Ball pit 5x5ft</li>
                         <li class="list-group-item">Fence</li>
                         <li class="list-group-item">Soft mat</li>
                         <li class="list-group-item">One soft play</li>
                         <li class="list-group-item">Two hopper</li>
                         <li class="list-group-item">Two soft car</li>
                         <li class="list-group-item">Two slide</li>
-                        <li class="list-group-item">Three soft blocks 25*25*25cm</li>
+                        <li class="list-group-item">Three soft blocks 25x25x25cm</li>
                     </ul>
                     <div class="card-body">
                         <div class="price">
@@ -180,7 +190,14 @@
             </div>
         </div>
     </main>
-
+    <section class="pie">
+        <div class="pie-container">
+            <img src="../img/titles/PAGINA WEB BENDON 2-07.png" alt="">
+        </div>
+    </section>
+    <a href="https://api.whatsapp.com/send?phone=16158104614" target="_blank" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
     <script src="../js/loader.js"></script>
 </body>
 

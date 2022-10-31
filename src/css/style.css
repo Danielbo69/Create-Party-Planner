@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap');
-
 :root {
     --padding-container: 100px 0;
     --color-title: #001A49;
@@ -43,7 +42,9 @@ body {
     z-index: -1;
 }
 
+
 /*other page*/
+
 .hero-universal {
     width: 100%;
     height: 100vh;
@@ -66,7 +67,6 @@ body {
     z-index: -1;
 }
 
-
 .hero_universal .title {
     color: #fff;
     border-bottom: 1px solid;
@@ -85,7 +85,9 @@ body {
     height: 50px;
 }
 
+
 /*Navbar*/
+
 .navbar-toggler-icon {
     background-image: url(../img/icons/menu.svg) !important;
 }
@@ -157,9 +159,12 @@ a {
     }
 }
 
+
 /* language change */
 
+
 /* en */
+
 .language {
     width: 120px;
     margin-left: 15px;
@@ -236,6 +241,7 @@ a.es:before {
 .language:hover ul {
     display: block;
 }
+
 
 /* es */
 
@@ -316,7 +322,9 @@ a.en:before {
     display: block;
 }
 
+
 /* hero container*/
+
 .hero_container {
     width: 100%;
     height: 100%;
@@ -349,6 +357,7 @@ a.en:before {
 
 
 /* about class */
+
 .about {
     text-align: center;
 }
@@ -417,7 +426,6 @@ a.en:before {
     overflow: hidden;
     margin: 0 auto;
     margin-bottom: 15px;
-
 }
 
 .about_icons a {
@@ -432,7 +440,9 @@ a.en:before {
     background-color: #0000001c;
 }
 
+
 /*about us*/
+
 .paragraph-about {
     margin: 50px;
     margin-top: 5px;
@@ -447,6 +457,7 @@ a.en:before {
 
 
 /*FAQ*/
+
 .container-faq {
     width: 100%;
 }
@@ -506,7 +517,6 @@ button:focus {
     margin-right: 10px;
 }
 
-
 .container-faq .item-faq .answer {
     position: relative;
     padding: 10px 20px 10px 40px;
@@ -535,7 +545,9 @@ button:focus {
     justify-content: right;
 }
 
+
 /* booknow */
+
 .booknow-container {
     padding: 20px;
     background-image: url(../img/fondos/fondo\ blanco.png);
@@ -557,7 +569,7 @@ button:focus {
     margin-top: 2em !important;
 }
 
-.texto-booknow{
+.texto-booknow {
     text-align: justify;
 }
 
@@ -605,7 +617,9 @@ mark {
     width: 150px;
 }
 
+
 /* Packages */
+
 .packages-container .card-container {
     margin: 0px !important;
     display: grid;
@@ -644,7 +658,23 @@ mark {
     background-color: #b12b6e;
 }
 
+.list-group-item {
+    background-color: #00000033 !important;
+}
+
+.colors {
+    display: flex !important;
+    align-items: center;
+}
+
+.colors img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+
 /*Pie*/
+
 .pie {
     width: 100%;
     height: 100%;
@@ -677,7 +707,9 @@ mark {
     display: none !important;
 }
 
+
 /* btn-ws */
+
 .btn-wsp {
     position: fixed;
     width: 60px;
@@ -700,7 +732,9 @@ mark {
     font-size: 30px;
 }
 
+
 /*Símbolo de Carga*/
+
 *,
 *::after,
 *::before {
@@ -729,7 +763,6 @@ mark {
     height: 100px;
     width: 100px;
     border-radius: 100%;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -745,13 +778,14 @@ mark {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
 }
 
+
 /*Slide Animation*/
+
 .slide {
     animation-name: slide !important;
     -webkit-animation-name: slide;
@@ -765,7 +799,6 @@ mark {
         opacity: 0;
         transform: translateY(70%);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0%);
@@ -777,7 +810,6 @@ mark {
         opacity: 0;
         -webkit-transform: translateY(70%);
     }
-
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
@@ -788,90 +820,71 @@ mark {
     .hero {
         height: 90vh !important;
     }
-
     .hero::before {
         clip-path: ellipse(95% 50% at 50% 30%);
     }
-
     .paragraph {
         font-size: 0.8em !important;
     }
-
     .language {
         margin-left: 0px !important;
     }
-
     .about_icons a {
         font-size: 1.1em !important;
     }
-
     .container-faq .item-faq .question h3 {
         font-size: 0.8rem !important;
         margin: 0;
     }
-
     .container-faq {
         margin-top: 4em !important;
     }
-
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
     }
-
     .about_icons img {
         width: 130px;
     }
-
     .btn-wsp {
         width: 63px;
         height: 63px;
         line-height: 66px;
     }
-
     .container-faq .item-faq .answer p {
         font-size: 1.05rem;
         margin: 0px;
     }
 }
 
-
 @media only screen and (min-width:425px) and (max-width:900px) {
     .hero::before {
         clip-path: ellipse(80% 50% at 50% 30%);
         /* top: 0px !important; */
     }
-
     .paragraph {
         font-size: 0.9em !important;
     }
-
     .language {
         margin-left: 0px !important;
     }
-
     .container-faq .item-faq .question h3 {
         font-size: 1rem !important;
         margin: 0;
     }
-
     .container-faq {
         margin-top: 1em !important;
     }
-
     .booknow-formcontrol .input-form {
         margin-bottom: 1em !important;
     }
-
     .about_icons img {
         width: 130px;
     }
-
     .btn-wsp {
         width: 63px;
         height: 63px;
         line-height: 66px;
     }
-
     .container-faq .item-faq .answer p {
         font-size: 1.05rem;
         margin: 0px;
@@ -881,13 +894,10 @@ mark {
 @media only screen and (min-width:901px) and (max-width:1067px) {
     .hero::before {
         clip-path: ellipse(80% 50% at 50% 40%);
-
     }
-
     .paragraph {
         font-size: 1.3em !important;
     }
-
     .about_icons img {
         width: 200px;
     }
@@ -897,15 +907,12 @@ mark {
     .hero::before {
         clip-path: ellipse(80% 50% at 50% 40%);
     }
-
     .hero_container img {
         width: 80% !important;
     }
-
     .paragraph {
         font-size: 1.3em !important;
     }
-
     .about_icons img {
         width: 200px;
     }
@@ -914,18 +921,13 @@ mark {
 @media only screen and (min-width:1440px) and (max-width:2560px) {
     .hero::before {
         clip-path: ellipse(80% 50% at 50% 40%);
-
     }
-
     .hero_container img {
         width: 80% !important;
     }
-
-
     .paragraph {
         font-size: 1.5em !important;
     }
-
     .about_icons img {
         width: 200px;
     }

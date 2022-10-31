@@ -357,10 +357,11 @@ a.en:before {
 
 .license {
     width: 100%;
+    text-align: center;
 }
 
 .license img {
-    width: 100%;
+    width: 90%;
 }
 
 

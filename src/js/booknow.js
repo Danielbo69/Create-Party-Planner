@@ -1,4 +1,4 @@
-const emailer = require('./emailer')
+// const emailer = require('./emailer')
 let $start = document.getElementById('startEvent')
 let $end = document.getElementById('endEvent')
 
@@ -62,7 +62,7 @@ recortar = function(array, inicio, fin, lugar) {
 
 /* An event listener that is listening for a change in the select element with the id of startEvent.
 When the event is triggered, it will run the function. */
-$start.addEventListener('change', function () {
+$start.addEventListener('change', function() {
     let value = $start.value;
     if (value != '9PM') {
         switch (value) {
@@ -134,11 +134,11 @@ radioChange = function(e) {
     }
 }
 
-$(function () {
+$(function() {
     $('#datepicker').datepicker();
 });
 
-sendForm = function () {
+sendForm = function() {
 
     let name = document.getElementById('name');
     let email = document.getElementById('email');
@@ -181,160 +181,160 @@ sendForm = function () {
     var myDate;
     today.setDate(today.getDate());
     /* Getting the current date and putting it in a variable. */
-    myDate = ('0' + (today.getMonth() + 1)).slice(-2) + '/'
-        + ('0' + today.getDate()).slice(-2) + '/'
-        + today.getFullYear();
+    myDate = ('0' + (today.getMonth() + 1)).slice(-2) + '/' +
+        ('0' + today.getDate()).slice(-2) + '/' +
+        today.getFullYear();
     var day = myDate;
 
     /* Checking if the user has filled in all the required fields. */
     if (name.value === "") {
         Swal.fire({
-            title: 'Error!',
-            text: 'Please write your name.',
-            icon: 'error',
-            confirmButtonText: 'Ok'
-        })
-    // } else if (!validEmail.test(email.value)) {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'The email you entered is not correct.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
+                title: 'Error!',
+                text: 'Please write your name.',
+                icon: 'error',
+                confirmButtonText: 'Ok'
+            })
+            // } else if (!validEmail.test(email.value)) {
+            //     Swal.fire({
+            //         title: 'Error!',
+            //         text: 'The email you entered is not correct.',
+            //         icon: 'error',
+            //         confirmButtonText: 'Ok'
+            //     })
 
-    // } else if (phone.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please write your phone number.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (dateEvent.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Enter date of the event.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (dateEvent.value < day) {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Wrong date! you can not write an overdue date',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (dateEvent.value === day) {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Date error, you cannot book the same day.' + '  ' + 'Please contact us by phone number to assist you',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (adress.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please enter adress.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (typeEvent.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please enter the typo of event.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (startEvent.value === "Select time") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please enter the time of event starts.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (endEvent.value === "Select time" || endEvent.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please enter the time of event ends.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (ages.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please enter estimated number of children.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (inOutdoor.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please choose the type of event, indoors or outdoors.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (!ballPit) {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please select yes or no.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (ballPit.value === "Yes" && ballColor.value === "" && CustomizeIt.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please write in the ball colors.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (ballPit.value === "Yes" && CustomizeIt.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please write in the ball pit field.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (!areaOutput.length) {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please select installation area.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (!packagesOutput.length) {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please select packages.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
-    // } else if (packageColor.value === "") {
-    //     Swal.fire({
-    //         title: 'Error!',
-    //         text: 'Please write packages colors.',
-    //         icon: 'error',
-    //         confirmButtonText: 'Ok'
-    //     })
+        // } else if (phone.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please write your phone number.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (dateEvent.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Enter date of the event.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (dateEvent.value < day) {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Wrong date! you can not write an overdue date',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (dateEvent.value === day) {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Date error, you cannot book the same day.' + '  ' + 'Please contact us by phone number to assist you',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (adress.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please enter adress.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (typeEvent.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please enter the typo of event.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (startEvent.value === "Select time") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please enter the time of event starts.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (endEvent.value === "Select time" || endEvent.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please enter the time of event ends.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (ages.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please enter estimated number of children.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (inOutdoor.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please choose the type of event, indoors or outdoors.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (!ballPit) {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please select yes or no.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (ballPit.value === "Yes" && ballColor.value === "" && CustomizeIt.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please write in the ball colors.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (ballPit.value === "Yes" && CustomizeIt.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please write in the ball pit field.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (!areaOutput.length) {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please select installation area.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (!packagesOutput.length) {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please select packages.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
+        // } else if (packageColor.value === "") {
+        //     Swal.fire({
+        //         title: 'Error!',
+        //         text: 'Please write packages colors.',
+        //         icon: 'error',
+        //         confirmButtonText: 'Ok'
+        //     })
     } else {
         jsn_ = {
-            name: name.value,
-            email: email.value,
-            phone: phone.value,
-            dateEvent: dateEvent.value,
-            adress: adress.value,
-            typeEvent: typeEvent.value,
-            startEvent: startEvent.value,
-            endEvent: endEvent.value,
-            ages: ages.value,
-            inOutdoor: inOutdoor.value,
-            ballPit: ballPit.value,
-            ballColor: ballColor.value,
-            CustomizeIt: CustomizeIt.value,
-            additionalDetails: additionalDetails.value,
-            areas: areaOutput,
-            package: packagesOutput,
-            packagesColors: packageColor.value,
-            packagExtras: extrasOutput
-        }
-        emailer.sendMail();
+                name: name.value,
+                email: email.value,
+                phone: phone.value,
+                dateEvent: dateEvent.value,
+                adress: adress.value,
+                typeEvent: typeEvent.value,
+                startEvent: startEvent.value,
+                endEvent: endEvent.value,
+                ages: ages.value,
+                inOutdoor: inOutdoor.value,
+                ballPit: ballPit.value,
+                ballColor: ballColor.value,
+                CustomizeIt: CustomizeIt.value,
+                additionalDetails: additionalDetails.value,
+                areas: areaOutput,
+                package: packagesOutput,
+                packagesColors: packageColor.value,
+                packagExtras: extrasOutput
+            }
+            // emailer.sendMail();
     }
 }

@@ -355,6 +355,14 @@ a.en:before {
     border-radius: 32px;
 }
 
+.license {
+    width: 100%;
+}
+
+.license img {
+    width: 100%;
+}
+
 
 /* about class */
 

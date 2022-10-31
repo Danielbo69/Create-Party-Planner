@@ -900,6 +900,12 @@ mark {
     }
 }
 
+@media only screen and (min-width:768px) and (max-width:901px) {
+    .license img {
+        width: 400px;
+    }
+}
+
 @media only screen and (min-width:901px) and (max-width:1067px) {
     .hero::before {
         clip-path: ellipse(80% 50% at 50% 40%);
@@ -909,6 +915,9 @@ mark {
     }
     .about_icons img {
         width: 200px;
+    }
+    .license img {
+        width: 600px;
     }
 }
 
@@ -925,6 +934,9 @@ mark {
     .about_icons img {
         width: 200px;
     }
+    .license img {
+        width: 600px;
+    }
 }
 
 @media only screen and (min-width:1440px) and (max-width:2560px) {
@@ -939,5 +951,8 @@ mark {
     }
     .about_icons img {
         width: 200px;
+    }
+    .license img {
+        width: 600px;
     }
 }

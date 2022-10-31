@@ -109,19 +109,8 @@
                 <mark>Brandon Luxury Events</mark>.
             </p>
 
-            <div class="booknow-buttons row">
-                <div class="col-lg">
-                    <button type="button" class="btn-book" onclick="formSelect('soft')" id="formselect">Soft
-                        Play</button>
-                </div>
-                <div class="col-lg">
-                    <button type="button" class="btn-book" onclick="formSelect('balloons')" id="formselect">Balloons
-                        Decoration</button>
-                </div>
-            </div>
             <!-- Form SoftPlay -->
-            <form action="../php/sendEmail.php" name="softplay" method="POST" id="softplay" class="slideanim"
-                style="display: none;">
+            <form action="" name="softplay" method="POST" id="softplay" class="slideanim">
                 <label for="" style="text-align: center; width: 100%;">Soft Play</label>
                 <div class="booknow-formcontrol row">
                     <div class="input-form col-lg">
@@ -449,138 +438,6 @@
                 </div>
             </form>
 
-            <!-- Form Balloons -->
-            <form action="" method="post" id="balloons" style="display: none;">
-                <label for="" style="text-align: center; width: 100%;">Balloons Decoration</label>
-                <div class="booknow-formcontrol row">
-                    <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/user.svg"
-                                alt="name"></span>
-                        <input type="text" class="form-control" placeholder="Your name" aria-label="Yourname"
-                            aria-describedby="basic-addon1" required>
-                    </div>
-                    <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon2"><img src="../../img/icons/email.svg"
-                                alt="email"></span>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
-                            aria-describedby="basic-addon2" required>
-                        <span class="input-group-text" id="basic-addon1">@example.com</span>
-                    </div>
-                    <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/phone.svg"
-                                alt="phone"></span>
-                        <input type="text" class="form-control" placeholder="Cell phone number/ with numeric code"
-                            aria-label="phonenumber" aria-describedby="basic-addon1" maxlength="12" required>
-                    </div>
-                </div>
-                <div class="booknow-formcontrol row">
-                    <br>
-                    <div class="input-form col-lg">
-                        <label for="" style="margin: 10px">PACKAGES INCLUDE UP TO 4 HOURS OF FUN. ADDITIONAL HOUR $100.
-                            (WE DON'T COUNT SETUP TIME)</label>
-                    </div>
-                </div>
-                <div class="booknow-formcontrol row">
-                    <label for="">Date of event</label>
-                    <div class="input-form col-lg">
-                        <span class="input-group-text" id="basic-addon1"><img src="../../img/icons/calendar.svg"
-                                alt="calendar"></span>
-                        <input class="form-control" type="date" value="date" aria-describedby="basic-addon1" required />
-                    </div>
-                    <div class="input-form col-lg">
-                        <span class="input-group-text"><img src="../../img/icons/map.svg" alt="map"></span>
-                        <textarea class="form-control" placeholder="Event Adress (Including zip code)"
-                            aria-describedby="basic-addon1" rows="2" cols="2" required></textarea>
-                    </div>
-                    <div class="input-form col-lg">
-                        <span class="input-group-text">Type of event</span>
-                        <select class="form-select" aria-label="Default select example" id="startEvent">
-                            <option>Select</option>
-                            <option value="Kids">Kids</option>
-                            <option value="Young">Young</option>
-                            <option value="Adults">Adults</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="booknow-formcontrol row">
-                    <div class="input-form col-lg">
-                        <span class="input-group-text">Event start time</span>
-                        <select class="form-select" aria-label="Default select example" id="startEvent">
-
-                        </select>
-                    </div>
-                    <div class="input-form col-lg">
-                        <span class="input-group-text">Event end time <b>(max 9:00pm)</b></span>
-                        <select class="form-select" aria-label="Default select example" id="endEvent">
-                        </select>
-                    </div>
-                </div>
-                <div class="booknow-formcontrol row">
-                    <div class="input-form  col-lg">
-                        <input type="text" class="form-control" placeholder="Ball color?" aria-label="ballColor"
-                            aria-describedby="basic-addon1" required>
-                    </div>
-                </div>
-                <div class="booknow-formcontrol row">
-                    <div class="form-check col-md">
-                        <span class="text-group">Installation Area (Checks all that apply).</span>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                            <label class="form-check-label" for="flexCheckIndeterminate">
-                                Zone will be set on hard floor.
-                            </label>
-                        </div>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                            <label class="form-check-label" for="flexCheckIndeterminate">
-                                Zone will be set on grass.
-                            </label>
-                        </div>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                            <label class="form-check-label" for="flexCheckIndeterminate">
-                                Zone will be set on carpet.
-                            </label>
-                        </div>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                            <label class="form-check-label" for="flexCheckIndeterminate">
-                                Elevator needed to get to set-up area.
-                            </label>
-                        </div>
-                        <div class="checks-package">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                            <label class="form-check-label" for="flexCheckIndeterminate">
-                                Stairs needed to get to set-up area.
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="booknow-formcontrol">
-                    <div class="input-form col-lg">
-                        <textarea class="form-control"
-                            placeholder="Additional details we may need to know about your event"
-                            aria-describedby="basic-addon1" rows="2" cols="2" required></textarea>
-                    </div>
-                </div>
-                <br>
-                <div class="input-form col-lg">
-                    <p class="h5 texto-booknow">
-                        <mark>
-                            A refundable deposit of $80 is required to cover damage to furniture (not included in the
-                            value
-                            of the quote) and it is understood that everything used for decoration will be returned at
-                            the
-                            end of the event.
-                        </mark>.
-                    </p>
-                </div>
-                <!--Enviar-->
-                <div class="container" id="envio">
-                    <button type="button" name="send" id="send" onclick="sendForm('Ballons')"
-                        class="btn btn-block">RESERVAR</button>
-                </div>
-            </form>
         </div>
     </main>
     <br>

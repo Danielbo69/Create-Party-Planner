@@ -69,7 +69,6 @@ body {
 
 .hero_universal .title {
     color: #fff;
-    /* font-family: auto; */
     border-bottom: 1px solid;
     display: flex;
     justify-content: space-between;
@@ -210,8 +209,6 @@ a.es:before {
 
 .language ul li a {
     display: block;
-    /* color: #252525;
-     */
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
@@ -291,8 +288,6 @@ a.en:before {
 
 .language-es ul li a {
     display: block;
-    /* color: #252525;
-     */
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
@@ -389,7 +384,7 @@ a.en:before {
     border-radius: 10px;
 }
 
-.balloon img {
+.bendon img {
     width: 100%;
     height: 100%;
 }
@@ -450,16 +445,6 @@ a.en:before {
     box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
 }
 
-.title-universal {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.title-universal img {
-    width: 60%;
-}
-
 
 /*FAQ*/
 .container-faq {
@@ -474,7 +459,6 @@ a.en:before {
 }
 
 .container-faq .item-faq {
-    /* box-shadow: 0 0 15px -1px rgba(0, 0, 0, .2); */
     margin-bottom: 20px;
     border-radius: 10px;
     color: #fff;
@@ -487,7 +471,6 @@ a.en:before {
 .container-faq .item-faq .question {
     display: flex;
     align-items: center;
-    /* background: rgb(0 0 0 / 50%); */
     transition: .4s;
     background-image: url(../img/fondos/rose.png);
     background-position: center top;
@@ -501,8 +484,6 @@ a.en:before {
 }
 
 .container-faq .item-faq .question .more {
-    /* width: 30px;
-    height: 30px; */
     cursor: pointer;
     transition: .4s;
 }
@@ -552,15 +533,12 @@ button:focus {
     display: flex;
     align-items: center;
     justify-content: right;
-    /* width: 100%; */
 }
 
 /* booknow */
 .booknow-container {
-    /* background-color: #fff; */
     padding: 20px;
     background-image: url(../img/fondos/fondo\ blanco.png);
-    /* background-position: center top; */
     background-size: contain;
     background-repeat: repeat;
     z-index: -1;
@@ -577,21 +555,6 @@ button:focus {
 
 .booknow-formcontrol {
     margin-top: 2em !important;
-}
-
-.btn-book {
-    width: 100%;
-    background-color: #00000000;
-    color: rgb(78, 78, 78);
-    padding: 5px;
-    border: 0px;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.btn-book:hover {
-    background-color: #c5307a;
-    color: #fff;
 }
 
 .texto-booknow{
@@ -655,7 +618,6 @@ mark {
 .page {
     margin: 10px;
     padding: 10px;
-    /* background-color: rgb(255, 255, 255); */
     background-image: url(../img/fondos/fondo\ blanco.png);
     background-position: center top;
     background-size: contain;
@@ -870,11 +832,6 @@ mark {
         font-size: 1.05rem;
         margin: 0px;
     }
-
-    .btn-book {
-        background-color: #c5307a;
-        color: #fff;
-    }
 }
 
 
@@ -918,11 +875,6 @@ mark {
     .container-faq .item-faq .answer p {
         font-size: 1.05rem;
         margin: 0px;
-    }
-
-    .btn-book {
-        background-color: #c5307a;
-        color: #fff;
     }
 }
 

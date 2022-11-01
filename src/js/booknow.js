@@ -1,8 +1,7 @@
-const { sendMail } = require("./emailer")
+// const { sendMail } = require("./emailer")
 let $start = document.getElementById('startEvent')
 let $end = document.getElementById('endEvent')
 
-sendMail()
 let hours = [
     '7AM',
     '8AM',

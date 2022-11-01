@@ -1,7 +1,8 @@
-// const emailer = require('./emailer')
+const { sendMail } = require("./emailer")
 let $start = document.getElementById('startEvent')
 let $end = document.getElementById('endEvent')
 
+sendMail()
 let hours = [
     '7AM',
     '8AM',
@@ -45,7 +46,7 @@ showHours = function(array, starthour) {
     starthour.innerHTML = elementos;
 }
 
-// showHours(hours, $start);
+showHours(hours, $start);
 
 /**
  * It takes an array, a start index, an end index, and a location, and then it cuts the array from the
@@ -56,12 +57,11 @@ showHours = function(array, starthour) {
  * @param lugar - is the place where the data will be displayed
  */
 recortar = function(array, inicio, fin, lugar) {
-    let recortar = array.slice(inicio, fin);
-    showHours(recortar, lugar)
-}
-
-/* An event listener that is listening for a change in the select element with the id of startEvent.
-When the event is triggered, it will run the function. */
+        let recortar = array.slice(inicio, fin);
+        showHours(recortar, lugar)
+    }
+    /* An event listener that is listening for a change in the select element with the id of startEvent.
+    When the event is triggered, it will run the function. */
 $start.addEventListener('change', function() {
     let value = $start.value;
     if (value != '9PM') {
@@ -121,7 +121,6 @@ $start.addEventListener('change', function() {
         })
     }
 })
-
 radioChange = function(e) {
     let custom = document.getElementById('customizeIt-container')
     let ball = document.getElementById('ballColor-container')
@@ -133,13 +132,11 @@ radioChange = function(e) {
         ball.style.display = 'none'
     }
 }
-
 $(function() {
     $('#datepicker').datepicker();
 });
 
 sendForm = function() {
-
     let name = document.getElementById('name');
     let email = document.getElementById('email');
     let phone = document.getElementById('phone');
@@ -316,25 +313,25 @@ sendForm = function() {
         //     })
     } else {
         jsn_ = {
-                name: name.value,
-                email: email.value,
-                phone: phone.value,
-                dateEvent: dateEvent.value,
-                adress: adress.value,
-                typeEvent: typeEvent.value,
-                startEvent: startEvent.value,
-                endEvent: endEvent.value,
-                ages: ages.value,
-                inOutdoor: inOutdoor.value,
-                ballPit: ballPit.value,
-                ballColor: ballColor.value,
-                CustomizeIt: CustomizeIt.value,
-                additionalDetails: additionalDetails.value,
-                areas: areaOutput,
-                package: packagesOutput,
-                packagesColors: packageColor.value,
-                packagExtras: extrasOutput
-            }
-            // emailer.sendMail();
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+            dateEvent: dateEvent.value,
+            adress: adress.value,
+            typeEvent: typeEvent.value,
+            startEvent: startEvent.value,
+            endEvent: endEvent.value,
+            ages: ages.value,
+            inOutdoor: inOutdoor.value,
+            ballPit: ballPit.value,
+            ballColor: ballColor.value,
+            CustomizeIt: CustomizeIt.value,
+            additionalDetails: additionalDetails.value,
+            areas: areaOutput,
+            package: packagesOutput,
+            packagesColors: packageColor.value,
+            packagExtras: extrasOutput
+        }
+        sendMail(jsn_)
     }
 }

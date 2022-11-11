@@ -3,7 +3,7 @@ const { env } = ("process");
 require('dotenv').config();
 
 const createTrans = () => {
-    const transporte = nodemailer.createTransport(smtpTransport({
+    const transporte = nodemailer.createTransport(({
         service: 'gmail',
         host: 'smtp.gmail.com',
         port: 465,

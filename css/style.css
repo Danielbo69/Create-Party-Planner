@@ -479,23 +479,16 @@ a.en:before {
 }
 
 .container-faq .item-faq {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     color: #fff;
-    background-image: url(../img/fondos/rose.png);
-    background-position: center top;
-    background-size: contain;
-    background-repeat: repeat;
 }
 
 .container-faq .item-faq .question {
     display: flex;
     align-items: center;
     transition: .4s;
-    background-image: url(../img/fondos/rose.png);
-    background-position: center top;
-    background-size: contain;
-    background-repeat: repeat;
+    background-color: #d63384;
 }
 
 .container-faq .item-faq .question h3 {
@@ -532,7 +525,7 @@ button:focus {
     overflow: hidden;
     display: none;
     transition: .4s;
-    background-color: #00000021;
+    background-color: #d63384eb;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -683,7 +676,7 @@ mark {
 }
 
 .list-group-item {
-    background-color: #00000033 !important;
+    background-color: #0000001b !important;
 }
 
 .colors {

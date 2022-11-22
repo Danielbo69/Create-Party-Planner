@@ -248,8 +248,28 @@
                 <div class="booknow-formcontrol row">
                     <div class="form-check col-lg">
                         <span class="text-group">Por favor escriba el color del paquete.</span>
-                        <div class="input-form col-lg">
+                        <div class="input-form col-lg" style="margin: 0px !important;">
                             <input type="text" class="form-control" placeholder="Color de los paquetes" id="packagesColor">
+                        </div>
+                        <div class="ballColor">
+                            <div class="color">
+                                <img src="../../img/packages/white&blue.png" alt="">
+                            </div>
+                            <div class="color">
+                                <img src="../../img/packages/white&grey.png" alt="">
+                            </div>
+                            <div class="color">
+                                <img src="../../img/packages/white&rose.png" alt="">
+                            </div>
+                            <div class="color">
+                                <img src="../../img/packages/whitegreyblue.png" alt="">
+                            </div>
+                            <div class="color">
+                                <img src="../../img/packages/whitegreyrose.png" alt="">
+                            </div>
+                            <div class="color">
+                                <img src="../../img/packages/rose.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="form-check col-lg">
@@ -301,7 +321,15 @@
                         </div>
                         <div class="checks-package">
                             <input class="form-check-input" type="checkbox" value="Coche suave" id="extras">
-                            <label for="extras" class="form-check-label">Coche Suave</label>
+                            <label for="extras" class="form-check-label">Coche Rosado Suave</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Coche suave" id="extras">
+                            <label for="extras" class="form-check-label">Coche Azul Suave</label>
+                        </div>
+                        <div class="checks-package">
+                            <input class="form-check-input" type="checkbox" value="Coche suave" id="extras">
+                            <label for="extras" class="form-check-label">Coche Blanco Suave</label>
                         </div>
                         <div class="checks-package">
                             <input class="form-check-input" type="checkbox" value="Bloques Suaves 25x25x25" id="extras">
@@ -387,10 +415,9 @@
                 </div>
                 <!--Send-->
                 <div class="container" id="envio">
-                    <button type="button" name="send" id="send" onclick="sendForm('Softplay')" class="btn btn-block">RESERVAR</button>
+                    <button type="button" id="send" class="btn btn-block">RESERVAR</button>
                 </div>
             </form>
-
         </div>
     </main>
     <br>

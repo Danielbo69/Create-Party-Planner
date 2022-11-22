@@ -164,10 +164,12 @@ sendForm.addEventListener('click', () => {
     for (let i = 0; i < area.length; i++) {
         areaOutput.push(area[i].defaultValue);
     };
+
     let packagesOutput = [];
     for (let i = 0; i < packages.length; i++) {
         packagesOutput.push(packages[i].defaultValue);
     };
+
     let extrasOutput = [];
     for (let i = 0; i < extras.length; i++) {
         extrasOutput.push(extras[i].defaultValue);
@@ -176,6 +178,7 @@ sendForm.addEventListener('click', () => {
     let today = new Date();
     let myDate;
     today.setDate(today.getDate());
+
     /* Getting the current date and putting it in a variable. */
     myDate = ('0' + (today.getMonth() + 1)).slice(-2) + '/' +
         ('0' + today.getDate()).slice(-2) + '/' +
@@ -335,28 +338,25 @@ sendForm.addEventListener('click', () => {
     }
 })
 
-sendEmail = function(e) {
-
+sendEmail = async function(e) {
     if (e != "") {
-        let url = 'http://localhost:4000/api/sendEmail';
+        let url = '/api/sendEmail';
         let send = {
             method: 'POST',
             body: JSON.stringify(e),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
-            },
-            mode: 'no-cors',
+            }
         }
-        console.log(send);
 
-        fetch(url, send)
-            .then(res => console.log(res))
-            .then(res => {
-                if (res.status === 200) {
+        await fetch('http://localhost:4000' + url, send)
+            .then(data => {
+                console.log(`respuesta data `, data)
+                if (data.status === 200) {
                     Swal.fire({
                         title: 'Success!',
                         text: 'Excellent, it has been sent correctly, we will contact you shortly.',
-                        icon: 'Success',
+                        icon: 'success',
                         confirmButtonText: 'Ok'
                     })
                 } else {
@@ -368,6 +368,5 @@ sendEmail = function(e) {
                     })
                 }
             })
-
     }
 }

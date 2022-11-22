@@ -587,6 +587,21 @@ button:focus {
     background-color: #ffc000 !important;
 }
 
+.ballColor {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    background-color: #00000012;
+    border-radius: 5px;
+}
+
+.ballColor .color img {
+    width: 30px;
+    background-color: rgba(228, 228, 228, 0.257);
+}
+
 .mark,
 mark {
     padding: 0.1875em;

@@ -39,7 +39,7 @@ valideKey = function(evt) {
 
 showHours = function(array, starthour) {
     let local = window.location.pathname;
-    if (local === '/ES/screens/reservar.html') {
+    if (local === '/Create-Party-Planner/ES/screens/reservar.html') {
         let elements = '<option selected disabled>Seleccione Hora</option>'
         for (let i = 0; i < array.length; i++) {
             elements += '<option value"' + array[i] + '">' + array[i] + '</option>'

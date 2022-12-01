@@ -12,7 +12,7 @@ for (let i = 0; i < btnDropdown.length; i++) {
         if (switchc == 0) {
             answer[i].style.display = `block`;
             question[i].style.marginBottom = '1px';
-            if (local === '/ES/screens/preguntas-frecuentes.html') {
+            if (local === '/Create-Party-Planner/ES/screens/preguntas-frecuentes.html') {
                 btnDropdown[i].innerHTML = '<img src="../../img/icons/minus.svg" alt="minus">';
             } else {
                 btnDropdown[i].innerHTML = '<img src="../img/icons/minus.svg" alt="minus">';
@@ -22,7 +22,7 @@ for (let i = 0; i < btnDropdown.length; i++) {
         } else if (switchc == 1) {
             answer[i].style.display = `none`;
             question[i].style.marginBottom = '0';
-            if (local === '/ES/screens/preguntas-frecuentes.html') {
+            if (local === '/Create-Party-Planner/ES/screens/preguntas-frecuentes.html') {
                 btnDropdown[i].innerHTML = '<img src="../../img/icons/plus.svg" alt="plus">';
             } else {
                 btnDropdown[i].innerHTML = '<img src="../img/icons/plus.svg" alt="plus">';

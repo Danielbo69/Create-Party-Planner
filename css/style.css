@@ -35,7 +35,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/fondos/fondo\ blanco.png);
+    background-image: url(../img/fondos/fondo\ blanco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: ellipse(100% 50% at 50% 40%);
@@ -60,7 +60,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/fondo\ blanco.png);
+    background-image: url(../img/fondo\ blanco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: ellipse(70% 50% at 51% 41%);
@@ -395,7 +395,7 @@ a.en:before {
     padding: 20px;
     font-size: 1.5em;
     text-align: justify;
-    background-image: url(../img/fondos/fondo\ blanco.png);
+    background-image: url(../img/fondos/fondo\ blanco.jpg);
     background-position: center top;
     background-size: contain;
     background-repeat: repeat;
@@ -552,7 +552,7 @@ button:focus {
 
 .booknow-container {
     padding: 20px;
-    background-image: url(../img/fondos/fondo\ blanco.png);
+    background-image: url(../img/fondos/fondo\ blanco.jpg);
     background-size: contain;
     background-repeat: repeat;
     z-index: -1;
@@ -649,7 +649,7 @@ mark {
 .page {
     margin: 10px;
     padding: 10px;
-    background-image: url(../img/fondos/fondo\ blanco.png);
+    background-image: url(../img/fondos/fondo\ blanco.jpg);
     background-position: center top;
     background-size: contain;
     background-repeat: repeat;

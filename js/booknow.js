@@ -38,11 +38,21 @@ valideKey = function(evt) {
 }
 
 showHours = function(array, starthour) {
-    let elementos = '<option selected disabled>Select time</option>'
-    for (let i = 0; i < array.length; i++) {
-        elementos += '<option value"' + array[i] + '">' + array[i] + '</option>'
+    let local = window.location.pathname;
+    if (local === '/ES/screens/reservar.html') {
+        let elements = '<option selected disabled>Seleccione Hora</option>'
+        for (let i = 0; i < array.length; i++) {
+            elements += '<option value"' + array[i] + '">' + array[i] + '</option>'
+        }
+        starthour.innerHTML = elements;
+    } else {
+        let elements = '<option selected disabled>Select time</option>'
+        for (let i = 0; i < array.length; i++) {
+            elements += '<option value"' + array[i] + '">' + array[i] + '</option>'
+        }
+        starthour.innerHTML = elements;
+
     }
-    starthour.innerHTML = elementos;
 }
 
 showHours(hours, $start);
@@ -51,13 +61,13 @@ showHours(hours, $start);
  * It takes an array, a start index, an end index, and a location, and then it cuts the array from the
  * start index to the end index, and then it shows the cut array in the location.
  * @param array - the array of objects
- * @param inicio - the starting point of the array
- * @param fin - the number of items to be displayed
- * @param lugar - is the place where the data will be displayed
+ * @param start - the starting point of the array
+ * @param end - the number of items to be displayed
+ * @param place - is the place where the data will be displayed
  */
-recortar = function(array, inicio, fin, lugar) {
-        let recortar = array.slice(inicio, fin);
-        showHours(recortar, lugar)
+trim = function(array, start, end, place) {
+        let trim = array.slice(start, end);
+        showHours(trim, place)
     }
     /* An event listener that is listening for a change in the select element with the id of startEvent.
     When the event is triggered, it will run the function. */
@@ -66,49 +76,49 @@ $start.addEventListener('change', function() {
     if (value != '9PM') {
         switch (value) {
             case '7AM':
-                recortar(hours, 1, 16, $end)
+                trim(hours, 1, 16, $end)
                 break
             case '8AM':
-                recortar(hours, 2, 16, $end)
+                trim(hours, 2, 16, $end)
                 break
             case '9AM':
-                recortar(hours, 3, 16, $end)
+                trim(hours, 3, 16, $end)
                 break
             case '10AM':
-                recortar(hours, 4, 16, $end)
+                trim(hours, 4, 16, $end)
                 break
             case '11AM':
-                recortar(hours, 5, 16, $end)
+                trim(hours, 5, 16, $end)
                 break
             case '12PM':
-                recortar(hours, 6, 16, $end)
+                trim(hours, 6, 16, $end)
                 break
             case '1PM':
-                recortar(hours, 7, 16, $end)
+                trim(hours, 7, 16, $end)
                 break
             case '2PM':
-                recortar(hours, 8, 16, $end)
+                trim(hours, 8, 16, $end)
                 break
             case '3PM':
-                recortar(hours, 9, 16, $end)
+                trim(hours, 9, 16, $end)
                 break
             case '4PM':
-                recortar(hours, 10, 16, $end)
+                trim(hours, 10, 16, $end)
                 break
             case '5PM':
-                recortar(hours, 11, 16, $end)
+                trim(hours, 11, 16, $end)
                 break
             case '6PM':
-                recortar(hours, 12, 16, $end)
+                trim(hours, 12, 16, $end)
                 break
             case '7PM':
-                recortar(hours, 13, 16, $end)
+                trim(hours, 13, 16, $end)
                 break
             case '8PM':
-                recortar(hours, 14, 16, $end)
+                trim(hours, 14, 16, $end)
                 break
             case '9PM':
-                recortar(hours, 14, 16, $end)
+                trim(hours, 14, 16, $end)
                 break
         }
     } else {
